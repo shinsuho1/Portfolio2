@@ -292,3 +292,79 @@
         }
     }
 }
+@media screen and (max-width: 1179px){
+    .information{
+        nav{
+            display: none;
+        }
+    }
+}
+
+
+@media screen and (max-width: 539px){
+    .information{
+        >.inner{
+            // margin-left: 10px;
+            h1{
+                margin-left: 20px;
+                font-size: 24px;
+            }
+        
+            article{
+                width: 90vw;
+                border: none;
+                border-radius: 0%;
+                cursor: pointer;
+                .pic{
+                    width: 100%;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                    
+                }
+                .text{
+                    width: 640px;
+                    height: 130px;
+                    margin: 20px;
+                    h2{
+                        font: bold 30px/1 "Montserrat";
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font: 16px/1 "arial";
+                    }
+                }
+                &:nth-of-type(3){
+                    .pic{
+                        width: 100%;
+                        height: 200px;
+                        img{
+                            border: none;
+                        }
+                    }
+
+                    .text{
+                        height: 70px;
+                        // margin: 0 0;
+                        justify-content: start;
+                        align-items: start;
+                        margin-left: 20px;
+                        h2{
+                            font: bold 30px/1 "Montserrat";
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+        aside{
+            display: none;
+        }
+        .location{
+            display: none;
+            
+        }
+    }
+}

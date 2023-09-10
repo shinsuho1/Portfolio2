@@ -1,7 +1,6 @@
 const sections = document.querySelectorAll("section");
 const section_arr = Array.from(sections);
 const main_section = document.querySelector(".main");
-const header = document.querySelector("header");
 let eventOnce = true;
 let posArr = [];
 
@@ -9,9 +8,6 @@ setTimeout(() => {
     main_section.classList.add("on");
 }, 700);
 
-setTimeout(()=>{
-    header.classList.add("on");
-},200);
 
 setPos();
 

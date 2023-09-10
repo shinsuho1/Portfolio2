@@ -1,8 +1,6 @@
 .progream{
     width: 100%;
     height: 100vh;
-    // background-color: rgba($color: #5175d8, $alpha: 0.1);
-    // border: 1px solid #000;
     padding: 150px 0px;
     display: flex;
     justify-content: center;
@@ -239,6 +237,177 @@
         .inner{
             opacity: 1;
             bottom: 0px;
+        }
+    }
+}
+
+@media screen and (max-width: 539px){
+    .progream{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        .inner{
+            width: 100%;
+            height: calc(100% * 6);
+            margin: 0px 0px;
+            position: relative;
+            opacity: 0;
+            bottom: -100px;
+            transition: 1s;
+    
+            div.title{
+                display: none;
+            }
+    
+            #slider{
+                width: 100%;
+                height: 400px;
+                float: left;
+                position: absolute;
+                top: 120px;
+                border-bottom: 1px solid #000;
+                    
+                li{
+                    width: 100%;
+                    height: 100%;
+                    float: left;
+                    .pic{
+                        width: 100%;
+                        height: 100%;
+                        
+                        article{
+                            width: 100%;
+                            height: 400px;
+                            float: both;
+                            display: block;
+                            background-color: #fff;
+                            position: absolute;
+                            right: -95vw;
+                            margin-left: 0;
+                            padding: 10px;
+                            margin: 0;
+                            h3{
+                                color:black;
+                                font: bold 30px/1 "Pretendard-Regular";
+                                margin-bottom: 13px;
+                            }
+                            p{
+                                color: black;
+                                font: 1px/1.2 "Pretendard-Regular";
+                                &:nth-of-type(1){
+                                    margin-bottom: 30px;
+                                }
+                            }
+                            .btn{
+                                display: flex;
+                                justify-content:space-around;
+                                margin-top: 20px;
+                                button{
+                                    background-color:#fff;
+                                    border-radius: 50px;
+                                    width: 200px;
+                                    height: 35px;                                
+                                    cursor: pointer;
+                                    font: 15px/35px "Pretendard-Regular";
+                                    &:last-child{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+    
+                            &:last-child{
+                                display: none;
+                            }
+                        }
+                    }
+    
+                    &:last-child{
+                        display: none;
+                    }    
+                    .excel{
+                        article{
+                            button{
+                                border: 1px solid #217345;
+                                &:nth-of-type(2){
+                                background-color: #217345;
+                                }
+                            }    
+                        }
+                        
+                    }
+                    .word{
+                        article{
+                            button{
+                                border: 1px solid #185abd;
+                                &:last-child{
+                                    background-color:#185abd;
+                                }
+                            }
+                        }
+                       
+                                
+                    }
+                    .powerpoint{
+                        article{
+                            button{
+                                border: 1px solid #d24726;
+                                &:last-child{
+                                    background-color: #d24726;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .access{
+                        article{
+                            button{
+                                border: 1px solid #a4373a;
+                                &:last-child{
+                                    background-color: #a4373a;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .teams{
+                        article{
+                            button{
+                                border: 1px solid #444bb1;
+                                &:last-child{
+                                    background-color: #444bb1;
+                                }
+                        }
+                        }
+                       
+                    }
+                    .onedrive{
+                        article{
+                            button{
+                                margin-top: 20px;
+                                border: 1px solid #0678d3;
+                                &:last-child{
+                                    background-color: #0678d3;
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .prev{
+                display: none;
+    
+            }
+            .next{
+                display: none;
+            }
+        }
+        &.on{
+            .inner{
+                opacity: 1;
+                bottom: 0px;
+            }
         }
     }
 }

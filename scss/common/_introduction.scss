@@ -115,11 +115,8 @@
                         opacity: 1;
                     }
                 }
-                &.click{
-
-                }
             }
-            
+     
         }
     }
     
@@ -128,6 +125,64 @@
             .wrap{
                 article{
                     transform: scale(1);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 539px){
+    .introduction{
+        height: 360vh;
+        padding: 10vh 0;
+        .inner{
+            width: 100%;
+            h1{
+                font: bold 5vw/1 "Montserrat";
+                margin-bottom: 3vh;
+            }
+            p{
+                font: 3vw/1 "arial";
+                margin-bottom: 5vw;
+            }
+
+            .wrap{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                article{
+                    width: 80vw;
+                    height: 30vh;
+                    transition: 1s;
+                    margin-right: 0;
+                    h2{
+                        font-size: 5vw;
+                        margin-top: 3vh;
+                    }
+                    span{
+                        width: 30vw;
+                        padding: 2%;   
+                        border-radius: 20vw;
+                        font-size: 3vw;
+                        i{
+                            display: none;
+                        }
+                    }
+                
+
+                    &.click{
+                        background-color: #282c37;
+                        .pic{
+                            img{
+                                opacity: 0;
+                                transform: scale(1.2);
+                            }
+                        }
+                        h2,span{
+                            opacity: 1;
+                        }
+                    }
                 }
             }
         }

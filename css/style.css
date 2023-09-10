@@ -98,6 +98,58 @@ header .inner .menuWeb #toggleBtn #toggle:checked ~ .toggleSwitch .toggleButton 
   left: calc(100% - 64px);
   background: #fff;
 }
+header .inner .btnCall {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10%;
+  left: 20px;
+  display: none;
+}
+header .inner .btnCall i {
+  font-size: 30px;
+  color: #000;
+  cursor: pointer;
+}
+header .inner .menuMo {
+  width: 270px;
+  height: 100vh;
+  background-color: #6a88d8;
+  position: fixed;
+  top: 0;
+  left: -270px;
+  padding: 35px 30px;
+  z-index: 10;
+  text-align: center;
+  transition: 0.5s;
+}
+header .inner .menuMo h2 {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #fff;
+}
+header .inner .menuMo h2 > a i {
+  font-size: 50px;
+  color: #fff;
+}
+header .inner .menuMo h2 img {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+header .inner .menuMo #gnbMo li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 1px solid #bdbdbd;
+  font: bold 14px/1 "arial";
+  color: #fff;
+}
+header .inner .menuMo.on {
+  left: 0px;
+}
 header.on {
   height: 80px;
   opacity: 1;
@@ -107,84 +159,36 @@ header.on .inner {
   bottom: -20px;
 }
 
-#header_sub {
-  width: 100%;
-  height: 80px;
-  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
-  opacity: 1;
-  transition: 1s;
-  z-index: 3;
+@media screen and (max-width: 1179px) {
+  header .inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  header .inner .menuWeb {
+    display: none;
+  }
+  header .inner .btnCall {
+    display: block;
+  }
+  header .inner .menuMo {
+    display: block;
+  }
+  #header_sub .inner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #header_sub .inner .menuWeb {
+    display: none;
+  }
+  #header_sub .inner .btnCall {
+    display: block;
+  }
+  #header_sub .inner .menuMo {
+    display: block;
+  }
 }
-#header_sub .inner {
-  width: 1180px;
-  height: -20px;
-  margin: 0 auto;
-  position: relative;
-  display: flex;
-  bottom: -20px;
-  justify-content: space-between;
-  opacity: 1;
-  transition: 1s;
-}
-#header_sub .inner h1 a i {
-  font-size: 50px;
-  color: #6a88d8;
-}
-#header_sub .inner .menuWeb {
-  display: flex;
-}
-#header_sub .inner .menuWeb #gnb li {
-  float: left;
-}
-#header_sub .inner .menuWeb #gnb li a {
-  display: block;
-  padding: 14px 40px;
-  font: bold 16px/1 "arial";
-  letter-spacing: 0px;
-  color: #6a88d8;
-}
-#header_sub .inner .menuWeb #gnb li:hover a::after {
-  content: "";
-  display: block;
-  box-shadow: 0 0 16px 5px rgba(40, 44, 55, 0.1);
-}
-#header_sub .inner .menuWeb #toggleBtn {
-  margin-left: 14px;
-}
-#header_sub .inner .menuWeb #toggleBtn .toggleSwitch {
-  width: 140px;
-  height: 40px;
-  display: block;
-  position: relative;
-  border-radius: 30px;
-  background-color: #fff;
-  border: 1px solid #6a88d8;
-  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-}
-#header_sub .inner .menuWeb #toggleBtn .toggleSwitch .toggleButton {
-  width: 60px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translateY(-50%);
-  border-radius: 100px;
-  background: #6a88d8;
-  transition: all 0.2s ease-in;
-  font: bold 18px/30px "Montserrats";
-  color: #fff;
-  text-align: center;
-}
-#header_sub .inner .menuWeb #toggleBtn #toggle:checked ~ .toggleSwitch {
-  background: #6a88d8;
-}
-#header_sub .inner .menuWeb #toggleBtn #toggle:checked ~ .toggleSwitch .toggleButton {
-  left: calc(100% - 64px);
-  background: #fff;
-}
-
 .main {
   width: 100%;
   height: 100vh;
@@ -305,6 +309,40 @@ header.on .inner {
   cursor: pointer;
 }
 
+@media screen and (max-width: 539px) {
+  .main {
+    height: 80vh;
+  }
+  .main .title {
+    width: 100%;
+    text-align: center;
+  }
+  .main .title h1 {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  .main .title h2 {
+    text-align: left;
+    margin-left: 4vw;
+  }
+  .main .title p {
+    display: none;
+  }
+  .main .title .btn {
+    padding: 10px 20px;
+    background: #6384e1;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    opacity: 1;
+  }
+  .main .title .icons {
+    display: none;
+  }
+  .main .square {
+    display: none;
+  }
+}
 .progream {
   width: 100%;
   height: 100vh;
@@ -491,9 +529,139 @@ header.on .inner {
   bottom: 0px;
 }
 
+@media screen and (max-width: 539px) {
+  .progream {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  .progream .inner {
+    width: 100%;
+    height: 600%;
+    margin: 0px 0px;
+    position: relative;
+    opacity: 0;
+    bottom: -100px;
+    transition: 1s;
+  }
+  .progream .inner div.title {
+    display: none;
+  }
+  .progream .inner #slider {
+    width: 100%;
+    height: 400px;
+    float: left;
+    position: absolute;
+    top: 120px;
+    border-bottom: 1px solid #000;
+  }
+  .progream .inner #slider li {
+    width: 100%;
+    height: 100%;
+    float: left;
+  }
+  .progream .inner #slider li .pic {
+    width: 100%;
+    height: 100%;
+  }
+  .progream .inner #slider li .pic article {
+    width: 100%;
+    height: 400px;
+    float: both;
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    right: -95vw;
+    margin-left: 0;
+    padding: 10px;
+    margin: 0;
+  }
+  .progream .inner #slider li .pic article h3 {
+    color: black;
+    font: bold 30px/1 "Pretendard-Regular";
+    margin-bottom: 13px;
+  }
+  .progream .inner #slider li .pic article p {
+    color: black;
+    font: 1px/1.2 "Pretendard-Regular";
+  }
+  .progream .inner #slider li .pic article p:nth-of-type(1) {
+    margin-bottom: 30px;
+  }
+  .progream .inner #slider li .pic article .btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  .progream .inner #slider li .pic article .btn button {
+    background-color: #fff;
+    border-radius: 50px;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    font: 15px/35px "Pretendard-Regular";
+  }
+  .progream .inner #slider li .pic article .btn button:last-child {
+    color: #fff;
+  }
+  .progream .inner #slider li .pic article:last-child {
+    display: none;
+  }
+  .progream .inner #slider li:last-child {
+    display: none;
+  }
+  .progream .inner #slider li .excel article button {
+    border: 1px solid #217345;
+  }
+  .progream .inner #slider li .excel article button:nth-of-type(2) {
+    background-color: #217345;
+  }
+  .progream .inner #slider li .word article button {
+    border: 1px solid #185abd;
+  }
+  .progream .inner #slider li .word article button:last-child {
+    background-color: #185abd;
+  }
+  .progream .inner #slider li .powerpoint article button {
+    border: 1px solid #d24726;
+  }
+  .progream .inner #slider li .powerpoint article button:last-child {
+    background-color: #d24726;
+  }
+  .progream .inner #slider li .access article button {
+    border: 1px solid #a4373a;
+  }
+  .progream .inner #slider li .access article button:last-child {
+    background-color: #a4373a;
+  }
+  .progream .inner #slider li .teams article button {
+    border: 1px solid #444bb1;
+  }
+  .progream .inner #slider li .teams article button:last-child {
+    background-color: #444bb1;
+  }
+  .progream .inner #slider li .onedrive article button {
+    margin-top: 20px;
+    border: 1px solid #0678d3;
+  }
+  .progream .inner #slider li .onedrive article button:last-child {
+    background-color: #0678d3;
+  }
+  .progream .inner .prev {
+    display: none;
+  }
+  .progream .inner .next {
+    display: none;
+  }
+  .progream.on .inner {
+    opacity: 1;
+    bottom: 0px;
+  }
+}
 section.data_page {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 150px 0;
 }
 section.data_page .inner {
@@ -669,6 +837,33 @@ section.data_page.on .inner .right_side .pic .right {
   margin-top: 60px;
 }
 
+@media screen and (max-width: 539px) {
+  section.data_page {
+    width: 100%;
+    height: 100vh;
+    padding: 200px 0;
+  }
+  section.data_page .inner {
+    width: 100%;
+    flex-direction: column;
+  }
+  section.data_page .inner .left_side {
+    width: 100%;
+    height: 100%;
+  }
+  section.data_page .inner .left_side .main_text {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 60px;
+  }
+  section.data_page .inner .left_side .main_text h1 {
+    margin-top: 0px;
+    font: bold 32px/1.3 "airal";
+  }
+  section.data_page .inner .right_side {
+    display: none;
+  }
+}
 .introduction {
   width: 100%;
   height: 100vh;
@@ -783,11 +978,64 @@ section.data_page.on .inner .right_side .pic .right {
   transform: scale(1);
 }
 
+@media screen and (max-width: 539px) {
+  .introduction {
+    height: 360vh;
+    padding: 10vh 0;
+  }
+  .introduction .inner {
+    width: 100%;
+  }
+  .introduction .inner h1 {
+    font: bold 5vw/1 "Montserrat";
+    margin-bottom: 3vh;
+  }
+  .introduction .inner p {
+    font: 3vw/1 "arial";
+    margin-bottom: 5vw;
+  }
+  .introduction .inner .wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .introduction .inner .wrap article {
+    width: 80vw;
+    height: 30vh;
+    transition: 1s;
+    margin-right: 0;
+  }
+  .introduction .inner .wrap article h2 {
+    font-size: 5vw;
+    margin-top: 3vh;
+  }
+  .introduction .inner .wrap article span {
+    width: 30vw;
+    padding: 2%;
+    border-radius: 20vw;
+    font-size: 3vw;
+  }
+  .introduction .inner .wrap article span i {
+    display: none;
+  }
+  .introduction .inner .wrap article.click {
+    background-color: #282c37;
+  }
+  .introduction .inner .wrap article.click .pic img {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  .introduction .inner .wrap article.click h2, .introduction .inner .wrap article.click span {
+    opacity: 1;
+  }
+}
 footer {
   width: 100%;
   padding: 100px 0;
   background-color: #282c37;
   color: #fff;
+  margin-top: 50px;
 }
 footer .inner {
   width: 1180px;
@@ -826,49 +1074,17 @@ footer .inner p {
   text-align: center;
 }
 
-#footer_sub {
-  width: 100%;
-  padding: 100px 0;
-  background-color: #282c37;
-  color: #fff;
+@media screen and (max-width: 539px) {
+  footer .inner {
+    width: 100%;
+  }
+  footer .inner p {
+    font-size: 2.5vw;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 20px 0 20px;
+  }
 }
-#footer_sub .inner {
-  width: 1180px;
-  margin: 0 auto;
-}
-#footer_sub .inner::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-#footer_sub .inner h1 {
-  font: bold 30px/1 "Montserrat";
-  text-align: center;
-  margin-bottom: 40px;
-  letter-spacing: 1px;
-}
-#footer_sub .inner ul {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-#footer_sub .inner ul li {
-  margin-right: 20px;
-  text-align: center;
-}
-#footer_sub .inner ul li a {
-  font: 14px/1 "Montserrat";
-  color: #ddd;
-}
-#footer_sub .inner ul span {
-  margin-right: 20px;
-  color: #ddd;
-}
-#footer_sub .inner p {
-  font: 14px/1 "Montserrat";
-  text-align: center;
-}
-
 .content {
   width: 100%;
   padding: 0 0 150px;
@@ -1154,6 +1370,66 @@ footer .inner p {
   opacity: 1;
 }
 
+@media screen and (max-width: 1179px) {
+  .information nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 539px) {
+  .information > .inner h1 {
+    margin-left: 20px;
+    font-size: 24px;
+  }
+  .information > .inner article {
+    width: 90vw;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+  }
+  .information > .inner article .pic {
+    width: 100%;
+  }
+  .information > .inner article .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .information > .inner article .text {
+    width: 640px;
+    height: 130px;
+    margin: 20px;
+  }
+  .information > .inner article .text h2 {
+    font: bold 30px/1 "Montserrat";
+    margin-bottom: 10px;
+  }
+  .information > .inner article .text p {
+    font: 16px/1 "arial";
+  }
+  .information > .inner article:nth-of-type(3) .pic {
+    width: 100%;
+    height: 200px;
+  }
+  .information > .inner article:nth-of-type(3) .pic img {
+    border: none;
+  }
+  .information > .inner article:nth-of-type(3) .text {
+    height: 70px;
+    justify-content: start;
+    align-items: start;
+    margin-left: 20px;
+  }
+  .information > .inner article:nth-of-type(3) .text h2 {
+    font: bold 30px/1 "Montserrat";
+    text-align: center;
+  }
+  .information aside {
+    display: none;
+  }
+  .information .location {
+    display: none;
+  }
+}
 .news {
   width: 1180px;
   padding: 100px 0;
@@ -1268,6 +1544,32 @@ footer .inner p {
   margin-top: 0px;
 }
 
+@media screen and (max-width: 539px) {
+  .news {
+    padding: 10vh 0;
+  }
+  .news .tab {
+    display: none;
+  }
+  .news .inner {
+    width: 80vw;
+    height: 800vh;
+    margin-left: 8vw;
+  }
+  .news .inner article {
+    position: relative;
+    opacity: 1;
+    display: block;
+    border-bottom: 1px solid #999;
+    margin-bottom: 20px;
+  }
+  .news .inner article h2 {
+    font: bold 4vw/1.1 "arial";
+  }
+  .news .inner article > p {
+    font-size: 3vw;
+  }
+}
 .download {
   width: 100%;
   height: 100vh;
@@ -1469,6 +1771,394 @@ footer .inner p {
 .type.active .btn a {
   transform: translateY(0%);
   opacity: 1;
+}
+
+@media screen and (max-width: 539px) {
+  .download {
+    width: 100%;
+  }
+  .download .img {
+    background-size: contain;
+  }
+  .download .inner {
+    width: 100%;
+  }
+  .download .inner h1 {
+    font: bold 8vw/1 "Rubik";
+    margin-bottom: 20px;
+  }
+  .download .inner p.ex {
+    font: 3vw/1 "Rubik";
+    margin: 0 10px 10px 10px;
+  }
+  .download .inner a.btn {
+    height: 4vh;
+    padding: 0 20px;
+    background-color: #6a88d8;
+    font: 14px/4vh "Rubik";
+  }
+  .download .inner p {
+    font: 12px/1 "arial";
+  }
+  .version {
+    width: 100%;
+    height: 40vh;
+  }
+  .version h2 {
+    font: bold 6vw/1.2 "Rubik";
+  }
+  .version ul {
+    width: 100%;
+  }
+  .version ul li {
+    width: 160px;
+    margin-right: 0px;
+  }
+  .version ul li i {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+  }
+  .version ul li h3 {
+    font: 3vw/1 "Rubik";
+  }
+  .version ul li p {
+    font: 2vw/1 "arial";
+  }
+  .version > p {
+    font: 3vw/1 "arial";
+    margin-bottom: 30px;
+  }
+  .type h2 {
+    width: 100vw;
+    font: 4vw/1 "Rubik";
+    transform: translateY(65%);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .type .btn {
+    width: 100vw;
+    height: 40px;
+    margin-top: 40px;
+    margin-left: 50px;
+    display: block;
+  }
+  .type .btn a {
+    height: 100%;
+    font: bold 3vw "arial";
+  }
+}
+.support {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  margin-top: 80px;
+  transition: 1s;
+}
+.support .inner {
+  width: 1180px;
+  height: 900px;
+  margin: 0 auto;
+}
+.support .inner .menu {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  margin-bottom: 80px;
+}
+.support .inner .menu li {
+  width: 100%;
+  padding: 20px;
+  border: 1px;
+  text-align: center;
+  color: #444;
+  font: bold 20px/1 "arial";
+  cursor: pointer;
+}
+.support .inner .menu li.on {
+  background-color: #4d6ee4;
+  color: #fff;
+}
+.support .inner article {
+  width: 1180px;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+}
+.support .inner article .title {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.support .inner article .title h3 {
+  font: bold 40px "arial";
+  margin-bottom: 20px;
+}
+.support .inner article .title h3 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.support .inner article .title h3 span::before {
+  content: "/";
+  margin: 0 20px 0 10px;
+}
+.support .inner article .title div {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 10px;
+}
+.support .inner article .title div i {
+  font-size: 20px;
+  cursor: pointer;
+}
+.support .inner article table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.support .inner article table thead {
+  border-bottom: 1px solid gray;
+  border-top: 2px solid #333;
+  padding: 1.5vh;
+}
+.support .inner article table thead tr th:nth-of-type(1) {
+  width: 75px;
+}
+.support .inner article table thead tr th:nth-of-type(2) {
+  width: 250px;
+}
+.support .inner article table thead tr th:nth-of-type(3) {
+  width: 745px;
+}
+.support .inner article table thead tr th:nth-of-type(4) {
+  width: 110px;
+}
+.support .inner article table tbody {
+  justify-content: left;
+  border-bottom: 1px solid gray;
+  padding: 0 1.5vh;
+}
+.support .inner article table tbody tr {
+  border-bottom: 1px solid gray;
+  height: 53px;
+}
+.support .inner article table tbody tr td {
+  padding: 16px 0;
+}
+.support .inner article table tbody tr td span {
+  background-color: #4d6ee4;
+  font-size: 14px;
+  color: #fff;
+  padding: 2px 8px;
+}
+.support .inner article table tbody tr td:nth-of-type(1) {
+  width: 75px;
+  text-align: center;
+}
+.support .inner article table tbody tr td:nth-of-type(2) {
+  width: 250px;
+  text-align: center;
+}
+.support .inner article table tbody tr td:nth-of-type(3) {
+  width: 745px;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+}
+.support .inner article table tbody tr td:nth-of-type(3):hover {
+  text-decoration: underline;
+}
+.support .inner article table tbody tr td:nth-of-type(4) {
+  width: 110px;
+  text-align: center;
+}
+.support .inner article.on {
+  opacity: 1;
+}
+.support .inner article.Announcement table thead tr th:nth-of-type(1) {
+  width: 75px;
+}
+.support .inner article.Announcement table thead tr th:nth-of-type(2) {
+  width: 995px;
+}
+.support .inner article.Announcement table thead tr th:nth-of-type(3) {
+  width: 110px;
+}
+.support .inner article.Announcement table tbody tr td:nth-of-type(1) {
+  width: 75px;
+}
+.support .inner article.Announcement table tbody tr td:nth-of-type(2) {
+  width: 995px;
+  text-align: left;
+  font-weight: bold;
+  padding: 16px 10px;
+  cursor: pointer;
+}
+.support .inner article.Announcement table tbody tr td:nth-of-type(2):hover {
+  text-decoration: underline;
+}
+.support .inner article.Announcement table tbody tr td:nth-of-type(3) {
+  width: 110px;
+  text-align: center;
+  cursor: default;
+}
+.support .inner article.Announcement table tbody tr td:nth-of-type(3):hover {
+  text-decoration: none;
+}
+.support.on {
+  opacity: 1;
+  margin-top: 0;
+}
+
+@media screen and (max-width: 539px) {
+  .support {
+    height: 400vh;
+    padding: 200px 0;
+  }
+  .support .inner {
+    width: 100%;
+    height: 35%;
+  }
+  .support .inner .menu {
+    display: none;
+  }
+  .support .inner article {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    position: relative;
+  }
+  .support .inner article .title {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .support .inner article .title h3 {
+    font: bold 40px "arial";
+    margin-bottom: 20px;
+  }
+  .support .inner article .title h3 span {
+    font: normal 20px/1 "맑은 고딕";
+    color: #aaa;
+  }
+  .support .inner article .title h3 span::before {
+    content: "/";
+    margin: 0 20px 0 10px;
+  }
+  .support .inner article .title div {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: end;
+    margin-bottom: 10px;
+  }
+  .support .inner article .title div i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .support .inner article table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .support .inner article table thead {
+    border-bottom: 1px solid gray;
+    border-top: 2px solid #333;
+    padding: 1.5vh;
+  }
+  .support .inner article table thead tr th:nth-of-type(1) {
+    width: 75px;
+  }
+  .support .inner article table thead tr th:nth-of-type(2) {
+    width: 250px;
+  }
+  .support .inner article table thead tr th:nth-of-type(3) {
+    width: 745px;
+  }
+  .support .inner article table thead tr th:nth-of-type(4) {
+    width: 110px;
+  }
+  .support .inner article table tbody {
+    justify-content: left;
+    border-bottom: 1px solid gray;
+    padding: 0 1.5vh;
+  }
+  .support .inner article table tbody tr {
+    border-bottom: 1px solid gray;
+    height: 53px;
+  }
+  .support .inner article table tbody tr td {
+    padding: 16px 0;
+  }
+  .support .inner article table tbody tr td span {
+    background-color: #4d6ee4;
+    font-size: 14px;
+    color: #fff;
+    padding: 2px 8px;
+  }
+  .support .inner article table tbody tr td:nth-of-type(1) {
+    width: 75px;
+    text-align: center;
+  }
+  .support .inner article table tbody tr td:nth-of-type(2) {
+    width: 250px;
+    text-align: center;
+  }
+  .support .inner article table tbody tr td:nth-of-type(3) {
+    width: 745px;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .support .inner article table tbody tr td:nth-of-type(3):hover {
+    text-decoration: underline;
+  }
+  .support .inner article table tbody tr td:nth-of-type(4) {
+    width: 110px;
+    text-align: center;
+  }
+  .support .inner article.on {
+    opacity: 1;
+  }
+  .support .inner article.Announcement table thead tr th:nth-of-type(1) {
+    width: 75px;
+  }
+  .support .inner article.Announcement table thead tr th:nth-of-type(2) {
+    width: 995px;
+  }
+  .support .inner article.Announcement table thead tr th:nth-of-type(3) {
+    width: 110px;
+  }
+  .support .inner article.Announcement table tbody tr td:nth-of-type(1) {
+    width: 75px;
+  }
+  .support .inner article.Announcement table tbody tr td:nth-of-type(2) {
+    width: 995px;
+    text-align: left;
+    font-weight: bold;
+    padding: 16px 10px;
+    cursor: pointer;
+  }
+  .support .inner article.Announcement table tbody tr td:nth-of-type(2):hover {
+    text-decoration: underline;
+  }
+  .support .inner article.Announcement table tbody tr td:nth-of-type(3) {
+    width: 110px;
+    text-align: center;
+    cursor: default;
+  }
+  .support .inner article.Announcement table tbody tr td:nth-of-type(3):hover {
+    text-decoration: none;
+  }
+  .support.on {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

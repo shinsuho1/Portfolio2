@@ -122,3 +122,40 @@
 		}
 	}
 }
+
+//539px
+@media screen and (max-width: 539px) {
+    .main{
+        height: 80vh;
+        .title{
+            width: 100%;
+            text-align: center;
+                h1{
+                    font-size: 5vw;
+                    margin-bottom: 4vw;
+                }
+                h2{
+                    text-align: left;
+                    margin-left: 4vw;
+                }
+                p{
+                    display: none;
+                }
+                .btn{
+                    padding: 10px 20px;
+                    background: #6384e1;
+                    color: #fff;
+                    border-radius: 5px;
+                    font-size: 15px;
+                    opacity: 1;
+                }
+                .icons{
+                    display: none;
+                }
+        }
+        .square{
+            display: none;
+        }
+
+    }
+}

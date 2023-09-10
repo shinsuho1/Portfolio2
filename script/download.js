@@ -27,9 +27,3 @@ window.addEventListener("scroll",()=>{
         }
     });
 });
-
-for(let el of section){
-    el.addEventListener("click",()=>{
-        aside.classList.add("on");
-    });
-}

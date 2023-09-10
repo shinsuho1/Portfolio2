@@ -229,3 +229,81 @@
         }
     }
 }
+
+@media screen and (max-width:539px){
+    .download{
+        width: 100%;
+        .img{
+            background-size: contain;
+        }
+        .inner{
+            width: 100%;
+            h1{
+                font: bold 8vw/1 "Rubik";
+                margin-bottom: 20px;
+            }
+            p.ex{
+                font: 3vw/1 "Rubik";
+                margin: 0 10px 10px 10px;
+            }
+            a.btn{
+                height: 4vh;
+                padding: 0 20px;
+                background-color: #6a88d8;
+                font: 14px/4vh "Rubik";
+            }
+            p{
+                font: 12px/1 "arial";
+            }
+        }
+    }
+    .version{
+        width: 100%; 
+        height: 40vh;  
+        h2{
+            font: bold 6vw/1.2 "Rubik";
+        }
+        ul{
+            width: 100%;
+            li{
+                width: 160px;
+                margin-right: 0px;
+                i{
+                    width: 50px;
+                    height: 50px;
+                    font-size: 50px;
+                }
+                h3{
+                    font: 3vw/1 "Rubik";
+                }
+                p{
+                    font: 2vw/1 "arial";
+                }
+            }
+        }
+        >p{
+            font: 3vw/1 "arial";
+            margin-bottom: 30px;
+        }
+    }
+    .type{
+        h2{
+            width: 100vw;
+            font: 4vw/1 "Rubik";
+            transform: translateY(65%);
+            opacity: 0; 
+            transition: 0.5s;
+        }
+        .btn{
+            width: 100vw;
+            height: 40px;
+            margin-top: 40px;
+            margin-left: 50px;
+            display: block;
+            a{
+                height: 100%;
+                font: bold 3vw "arial";
+            }
+        }
+    }
+}

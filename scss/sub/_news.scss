@@ -118,3 +118,30 @@
         margin-top: 0px;
     }
 }
+
+@media screen and (max-width: 539px){
+    .news{
+        padding: 10vh 0;
+        .tab{
+            display: none;
+        }
+        .inner{
+            width: 80vw;
+            height: calc(100vh * 8);
+            margin-left: 8vw;
+            article{
+                position: relative;
+                opacity: 1;
+                display: block;
+                border-bottom: 1px solid #999;
+                margin-bottom: 20px;
+                h2{
+                    font: bold 4vw/1.1 "arial";
+                }
+                >p{
+                    font-size: 3vw;
+                }
+            }
+        }
+    }
+}
