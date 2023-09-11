@@ -1026,6 +1026,12 @@ footer .inner p {
   footer .inner {
     width: 100%;
   }
+  footer .inner h1 {
+    font-size: 5vw;
+  }
+  footer .inner ul li a {
+    font-size: 3vw;
+  }
   footer .inner p {
     font-size: 2.5vw;
     line-height: 1.2;
