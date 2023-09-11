@@ -143,9 +143,15 @@ header .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0;
-  border-bottom: 1px solid #bdbdbd;
+  border-bottom: 1px solid #fff;
   font: bold 14px/1 "arial";
   color: #fff;
+}
+header .inner .menuMo > p {
+  color: #fff;
+  position: absolute;
+  bottom: 40px;
+  font-size: 15px;
 }
 header .inner .menuMo.on {
   left: 0px;
@@ -541,8 +547,8 @@ header.on .inner {
     height: 600%;
     margin: 0px 0px;
     position: relative;
-    opacity: 0;
-    bottom: -100px;
+    opacity: 1;
+    bottom: 0;
     transition: 1s;
   }
   .progream .inner div.title {
@@ -859,6 +865,9 @@ section.data_page.on .inner .right_side .pic .right {
   section.data_page .inner .left_side .main_text h1 {
     margin-top: 0px;
     font: bold 32px/1.3 "airal";
+  }
+  section.data_page .inner .left_side .sub_text .table .data {
+    width: 82%;
   }
   section.data_page .inner .right_side {
     display: none;
@@ -1395,7 +1404,7 @@ footer .inner p {
     object-fit: contain;
   }
   .information > .inner article .text {
-    width: 100%;
+    width: 90%;
     height: 130px;
     margin: 20px;
   }

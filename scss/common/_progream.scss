@@ -252,8 +252,8 @@
             height: calc(100% * 6);
             margin: 0px 0px;
             position: relative;
-            opacity: 0;
-            bottom: -100px;
+            opacity: 1;
+            bottom: 0;
             transition: 1s;
     
             div.title{
