@@ -302,8 +302,14 @@
 
 @media screen and (max-width: 539px){
     .information{
+        width: 100%;
         >.inner{
-            margin-left: 20px;
+            width: 100%;
+            // margin-left: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
             h1{
                 // margin-left: 20px;
                 font-size: 30px;

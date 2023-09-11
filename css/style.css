@@ -21,6 +21,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
   width: 100%;
   height: 0px;
@@ -563,123 +567,6 @@ header.on .inner {
   bottom: 0px;
 }
 
-@media screen and (max-width: 539px) {
-  .progream {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-  .progream .inner {
-    width: 100%;
-    height: 600%;
-    margin: 0px 0px;
-    position: relative;
-    opacity: 1;
-    bottom: 0;
-    transition: 1s;
-  }
-  .progream .inner div.title {
-    display: none;
-  }
-  .progream .inner #slider {
-    width: 100%;
-    height: 400px;
-    float: left;
-    position: absolute;
-    top: 120px;
-    border-bottom: 1px solid #000;
-  }
-  .progream .inner #slider li {
-    width: 100%;
-    height: 100%;
-    float: both;
-  }
-  .progream .inner #slider li .pic {
-    width: 100%;
-    height: 100%;
-  }
-  .progream .inner #slider li .pic article {
-    width: 100%;
-    height: 400px;
-    float: both;
-    display: block;
-    background-color: #fff;
-    position: absolute;
-    right: -95vw;
-    margin-left: 0;
-    padding: 10px;
-    margin: 0;
-  }
-  .progream .inner #slider li .pic article h2 {
-    display: block;
-  }
-  .progream .inner #slider li .pic article h3 {
-    color: black;
-    font: bold 5vw/1 "Pretendard-Regular";
-    margin-bottom: 13px;
-  }
-  .progream .inner #slider li .pic article p {
-    color: #444;
-    font: 3vw/1.2 "Pretendard-Regular";
-  }
-  .progream .inner #slider li .pic article p:nth-of-type(1) {
-    margin-bottom: 30px;
-  }
-  .progream .inner #slider li .pic article .btn {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
-  }
-  .progream .inner #slider li .pic article .btn button {
-    background-color: #fff;
-    border-radius: 50px;
-    width: 200px;
-    height: 35px;
-    cursor: pointer;
-    font: 15px/35px "Pretendard-Regular";
-  }
-  .progream .inner #slider li .pic article .btn button:last-child {
-    color: #fff;
-  }
-  .progream .inner #slider li .pic article:last-child {
-    display: none;
-  }
-  .progream .inner #slider li:last-child {
-    display: none;
-  }
-  .progream .inner #slider li .excel article button:nth-of-type(2) {
-    background-color: #217345;
-  }
-  .progream .inner #slider li .word article button:last-child {
-    background-color: #185abd;
-  }
-  .progream .inner #slider li .powerpoint article button:last-child {
-    background-color: #d24726;
-  }
-  .progream .inner #slider li .access article button:last-child {
-    background-color: #a4373a;
-  }
-  .progream .inner #slider li .teams article button:last-child {
-    background-color: #444bb1;
-  }
-  .progream .inner #slider li .onedrive article button {
-    margin-top: 20px;
-  }
-  .progream .inner #slider li .onedrive article button:last-child {
-    background-color: #0678d3;
-  }
-  .progream .inner .prev {
-    display: none;
-  }
-  .progream .inner .next {
-    display: none;
-  }
-  .progream.on .inner {
-    opacity: 1;
-    bottom: 0px;
-  }
-}
 section.data_page {
   width: 100%;
   height: 100vh;
@@ -878,7 +765,7 @@ section.data_page.on .inner .right_side .pic .right {
   section.data_page .inner .left_side .main_text {
     width: 100%;
     height: 200px;
-    margin-bottom: 60px;
+    margin-bottom: 15vw;
   }
   section.data_page .inner .left_side .main_text h1 {
     margin-top: 0px;
@@ -1040,7 +927,8 @@ section.data_page.on .inner .right_side .pic .right {
 
 @media screen and (max-width: 539px) {
   .introduction {
-    height: 360vh;
+    width: 100%;
+    height: 200vh;
     padding: 10vh 0;
   }
   .introduction .inner {
@@ -1435,8 +1323,15 @@ footer .inner p {
   }
 }
 @media screen and (max-width: 539px) {
+  .information {
+    width: 100%;
+  }
   .information > .inner {
-    margin-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
   }
   .information > .inner h1 {
     font-size: 30px;
@@ -1607,28 +1502,46 @@ footer .inner p {
 
 @media screen and (max-width: 539px) {
   .news {
+    width: 100%;
+    height: 100%;
     padding: 10vh 0;
   }
   .news .tab {
     display: none;
   }
   .news .inner {
-    width: 80vw;
-    height: 800vh;
-    margin-left: 8vw;
+    width: 100%;
+    height: 100%;
+    margin-top: 40px;
+  }
+  .news .inner::before {
+    content: "";
+    display: block;
+    clear: both;
   }
   .news .inner article {
     position: relative;
     opacity: 1;
     display: block;
-    border-bottom: 1px solid #999;
     margin-bottom: 20px;
+    padding: 20px;
   }
   .news .inner article h2 {
     font: bold 4vw/1.1 "arial";
   }
+  .news .inner article h2::before {
+    width: 100%;
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #bebebe;
+    margin-bottom: 30px;
+  }
   .news .inner article > p {
-    font-size: 3vw;
+    font-size: 3.5vw;
+  }
+  .news .inner article:last-child {
+    margin-top: 100px;
   }
 }
 .download {
@@ -1839,6 +1752,7 @@ footer .inner p {
     width: 100%;
   }
   .download .img {
+    width: 100%;
     background-size: contain;
   }
   .download .inner {
@@ -1891,26 +1805,35 @@ footer .inner p {
     margin-bottom: 30px;
   }
   .type {
+    width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .type h2 {
     width: 100vw;
     font: 3.5vw/1 "Rubik";
     transform: translateY(65%);
-    opacity: 0;
+    opacity: 1;
     transition: 0.5s;
-    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-top: 50px;
   }
   .type .btn {
     width: 100vw;
     height: 40px;
-    margin-top: 40px;
-    margin-left: 50px;
     display: block;
+    opacity: 1;
+    text-align: center;
   }
   .type .btn a {
     height: 100%;
     font: bold 3vw "arial";
+    opacity: 1;
+  }
+  .type.active .btn a {
+    transform: translateY(none);
   }
 }
 .support {
@@ -1969,17 +1892,6 @@ footer .inner p {
 .support .inner article .title h3 span::before {
   content: "/";
   margin: 0 20px 0 10px;
-}
-.support .inner article .title div {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: end;
-  margin-bottom: 10px;
-}
-.support .inner article .title div i {
-  font-size: 20px;
-  cursor: pointer;
 }
 .support .inner article table {
   width: 100%;
@@ -2042,6 +1954,75 @@ footer .inner p {
 .support .inner article.on {
   opacity: 1;
 }
+.support .inner .QNA .title div.icon {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 10px;
+}
+.support .inner .QNA .title div.icon i {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.support .inner .QNA table {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.support .inner .QNA table thead tr th:nth-of-type(1) {
+  width: 75px;
+}
+.support .inner .QNA table thead tr th:nth-of-type(2) {
+  width: 250px;
+}
+.support .inner .QNA table thead tr th:nth-of-type(3) {
+  width: 745px;
+}
+.support .inner .QNA table thead tr th:nth-of-type(4) {
+  width: 110px;
+}
+.support .inner .QNA table tbody {
+  justify-content: left;
+  border-bottom: 1px solid gray;
+  padding: 0 1.5vh;
+}
+.support .inner .QNA table tbody tr {
+  border-bottom: 1px solid gray;
+  height: 53px;
+}
+.support .inner .QNA table tbody tr td {
+  padding: 16px 0;
+  cursor: default;
+}
+.support .inner .QNA table tbody tr td span {
+  background-color: #4d6ee4;
+  font-size: 14px;
+  color: #fff;
+  padding: 2px 8px;
+}
+.support .inner .QNA table tbody tr td:nth-of-type(1) {
+  width: 75px;
+  text-align: center;
+}
+.support .inner .QNA table tbody tr td:nth-of-type(2) {
+  width: 250px;
+  text-align: center;
+}
+.support .inner .QNA table tbody tr td:nth-of-type(3) {
+  width: 745px;
+  text-align: left;
+  font-weight: bold;
+}
+.support .inner .QNA table tbody tr td:nth-of-type(4) {
+  width: 110px;
+  text-align: center;
+}
+.support .inner .QNA.on {
+  opacity: 1;
+}
 .support .inner .Announcement table thead tr th:nth-of-type(1) {
   width: 75px;
 }
@@ -2072,152 +2053,6 @@ footer .inner p {
 .support.on {
   opacity: 1;
   margin-top: 0;
-}
-
-@media screen and (max-width: 539px) {
-  .support {
-    height: 400vh;
-    padding: 200px 0;
-  }
-  .support .inner {
-    width: 100%;
-    height: 35%;
-  }
-  .support .inner .menu {
-    display: none;
-  }
-  .support .inner article {
-    width: 100%;
-    height: 100%;
-    opacity: 1;
-    position: relative;
-  }
-  .support .inner article .title {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-  }
-  .support .inner article .title h3 {
-    font: bold 40px "arial";
-    margin-bottom: 20px;
-  }
-  .support .inner article .title h3 span {
-    font: normal 20px/1 "맑은 고딕";
-    color: #aaa;
-  }
-  .support .inner article .title h3 span::before {
-    content: "/";
-    margin: 0 20px 0 10px;
-  }
-  .support .inner article .title div {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: end;
-    margin-bottom: 10px;
-  }
-  .support .inner article .title div i {
-    font-size: 20px;
-    cursor: pointer;
-  }
-  .support .inner article table {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-  .support .inner article table thead {
-    border-bottom: 1px solid gray;
-    border-top: 2px solid #333;
-    padding: 1.5vh;
-  }
-  .support .inner article table thead tr th:nth-of-type(1) {
-    width: 75px;
-  }
-  .support .inner article table thead tr th:nth-of-type(2) {
-    width: 250px;
-  }
-  .support .inner article table thead tr th:nth-of-type(3) {
-    width: 745px;
-  }
-  .support .inner article table thead tr th:nth-of-type(4) {
-    width: 110px;
-  }
-  .support .inner article table tbody {
-    justify-content: left;
-    border-bottom: 1px solid gray;
-    padding: 0 1.5vh;
-  }
-  .support .inner article table tbody tr {
-    border-bottom: 1px solid gray;
-    height: 53px;
-  }
-  .support .inner article table tbody tr td {
-    padding: 16px 0;
-  }
-  .support .inner article table tbody tr td span {
-    background-color: #4d6ee4;
-    font-size: 14px;
-    color: #fff;
-    padding: 2px 8px;
-  }
-  .support .inner article table tbody tr td:nth-of-type(1) {
-    width: 75px;
-    text-align: center;
-  }
-  .support .inner article table tbody tr td:nth-of-type(2) {
-    width: 250px;
-    text-align: center;
-  }
-  .support .inner article table tbody tr td:nth-of-type(3) {
-    width: 745px;
-    text-align: left;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .support .inner article table tbody tr td:nth-of-type(3):hover {
-    text-decoration: underline;
-  }
-  .support .inner article table tbody tr td:nth-of-type(4) {
-    width: 110px;
-    text-align: center;
-  }
-  .support .inner article.on {
-    opacity: 1;
-  }
-  .support .inner article.Announcement table thead tr th:nth-of-type(1) {
-    width: 75px;
-  }
-  .support .inner article.Announcement table thead tr th:nth-of-type(2) {
-    width: 995px;
-  }
-  .support .inner article.Announcement table thead tr th:nth-of-type(3) {
-    width: 110px;
-  }
-  .support .inner article.Announcement table tbody tr td:nth-of-type(1) {
-    width: 75px;
-  }
-  .support .inner article.Announcement table tbody tr td:nth-of-type(2) {
-    width: 995px;
-    text-align: left;
-    font-weight: bold;
-    padding: 16px 10px;
-    cursor: pointer;
-  }
-  .support .inner article.Announcement table tbody tr td:nth-of-type(2):hover {
-    text-decoration: underline;
-  }
-  .support .inner article.Announcement table tbody tr td:nth-of-type(3) {
-    width: 110px;
-    text-align: center;
-    cursor: default;
-  }
-  .support .inner article.Announcement table tbody tr td:nth-of-type(3):hover {
-    text-decoration: none;
-  }
-  .support.on {
-    opacity: 1;
-    margin-top: 0;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */

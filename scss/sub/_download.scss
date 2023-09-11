@@ -234,6 +234,7 @@
     .download{
         width: 100%;
         .img{
+            width: 100%;
             background-size: contain;
         }
         .inner{
@@ -287,24 +288,38 @@
         }
     }
     .type{
+        width: 100%;
         height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         h2{
             width: 100vw;
             font: 3.5vw/1 "Rubik";
             transform: translateY(65%);
-            opacity: 0; 
+            opacity: 1; 
             transition: 0.5s;
-            margin-top: 40px;
+            margin-bottom: 10px;
+            margin-top: 50px;
         }
         .btn{
             width: 100vw;
             height: 40px;
-            margin-top: 40px;
-            margin-left: 50px;
+            // margin-left: 50px;
             display: block;
+            opacity: 1;
+            text-align: center;
             a{
                 height: 100%;
                 font: bold 3vw "arial";
+                opacity: 1;
+            }
+        }
+        &.active{
+            .btn{
+                a{
+                    transform: translateY(none);
+                }
             }
         }
     }
