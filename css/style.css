@@ -585,12 +585,12 @@ header.on .inner {
   }
   .progream .inner #slider li .pic article h3 {
     color: black;
-    font: bold 30px/1 "Pretendard-Regular";
+    font: bold 5vw/1 "Pretendard-Regular";
     margin-bottom: 13px;
   }
   .progream .inner #slider li .pic article p {
-    color: black;
-    font: 1px/1.2 "Pretendard-Regular";
+    color: #444;
+    font: 3vw/1.2 "Pretendard-Regular";
   }
   .progream .inner #slider li .pic article p:nth-of-type(1) {
     margin-bottom: 30px;
