@@ -69,7 +69,6 @@
                 display: flex;
                 flex-direction: column;
                 thead{
-                    // justify-content: left;
                     border-bottom: 1px solid gray;
                     border-top: 2px solid #333;
                     padding: 1.5vh;
@@ -100,6 +99,7 @@
                         height: 53px;
                         td{
                             padding: 16px 0;
+                            cursor: default;
                             span{
                                 background-color: #4d6ee4;
                                 font-size: 14px;
@@ -118,10 +118,6 @@
                                 width: 745px;
                                 text-align: left;
                                 font-weight: bold;
-                                cursor: pointer;
-                                &:hover{
-                                    text-decoration: underline;
-                                }
                             }
                             &:nth-of-type(4){
                                 width: 110px;
@@ -135,47 +131,46 @@
                 opacity: 1;
             }
 
-            &.Announcement{
-                table{
-                    thead{
-                        tr{
-                            th{
-                                &:nth-of-type(1){
-                                    width: 75px;
-                                }
-                                &:nth-of-type(2){
-                                    width: 995px;
-                                }
-                                &:nth-of-type(3){
-                                    width: 110px;
-                                }
+        }
+
+
+        .Announcement{
+            table{
+                thead{
+                    tr{
+                        th{
+                            &:nth-of-type(1){
+                                width: 75px;
+                            }
+                            &:nth-of-type(2){
+                                width: 995px;
+                            }
+                            &:nth-of-type(3){
+                                width: 120px;
+                                font-weight: normal;
                             }
                         }
                     }
-                    tbody{
-                        tr{
-                            td{
-                                &:nth-of-type(1){
-                                    width: 75px;
+                }
+                tbody{
+                    tr{
+                        td{
+                            &:nth-of-type(1){
+                                width: 75px;
+                            }
+                            &.title{
+                                width: 975px;
+                                text-align: left;
+                                font-weight: bold;
+                                padding: 16px 10px;
+                                cursor: pointer;
+                                &:hover{
+                                    text-decoration: underline;
                                 }
-                                &:nth-of-type(2){
-                                    width: 995px;
-                                    text-align: left;
-                                    font-weight: bold;
-                                    padding: 16px 10px;
-                                    cursor: pointer;
-                                    &:hover{
-                                        text-decoration: underline;
-                                    }
-                                }
-                                &:nth-of-type(3){
-                                    width: 110px;
-                                    text-align: center;
-                                    cursor:default;
-                                    &:hover{
-                                        text-decoration: none;
-                                    }
-                                }
+                            }
+                            &:nth-of-type(3){
+                                width: 120px;
+                                text-align: center;
                             }
                         }
                     }

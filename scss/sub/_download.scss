@@ -287,12 +287,14 @@
         }
     }
     .type{
+        height: 100%;
         h2{
             width: 100vw;
-            font: 4vw/1 "Rubik";
+            font: 3.5vw/1 "Rubik";
             transform: translateY(65%);
             opacity: 0; 
             transition: 0.5s;
+            margin-top: 40px;
         }
         .btn{
             width: 100vw;

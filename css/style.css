@@ -317,7 +317,7 @@ header.on .inner {
 
 @media screen and (max-width: 539px) {
   .main {
-    height: 80vh;
+    height: 90vh;
   }
   .main .title {
     width: 100%;
@@ -347,6 +347,14 @@ header.on .inner {
   }
   .main .square {
     display: none;
+  }
+  .main .pop {
+    width: 90%;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
   }
 }
 .progream {
@@ -435,6 +443,11 @@ header.on .inner {
   background-color: #fff;
   padding: 40px;
 }
+.progream .inner #slider li .pic article h2 {
+  display: none;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
 .progream .inner #slider li .pic article h3 {
   color: black;
   font: bold 30px/1 "Pretendard-Regular";
@@ -479,11 +492,17 @@ header.on .inner {
   height: 100%;
   object-fit: cover;
 }
+.progream .inner #slider li .excel article h2 {
+  color: #217345;
+}
 .progream .inner #slider li .excel article button {
   border: 1px solid #217345;
 }
 .progream .inner #slider li .excel article button:nth-of-type(2) {
   background-color: #217345;
+}
+.progream .inner #slider li .word article h2 {
+  color: #185abd;
 }
 .progream .inner #slider li .word article button {
   border: 1px solid #185abd;
@@ -491,11 +510,17 @@ header.on .inner {
 .progream .inner #slider li .word article button:last-child {
   background-color: #185abd;
 }
+.progream .inner #slider li .powerpoint article h2 {
+  color: #d24726;
+}
 .progream .inner #slider li .powerpoint article button {
   border: 1px solid #d24726;
 }
 .progream .inner #slider li .powerpoint article button:last-child {
   background-color: #d24726;
+}
+.progream .inner #slider li .access article h2 {
+  color: #a4373a;
 }
 .progream .inner #slider li .access article button {
   border: 1px solid #a4373a;
@@ -508,6 +533,9 @@ header.on .inner {
 }
 .progream .inner #slider li .teams article button:last-child {
   background-color: #444bb1;
+}
+.progream .inner #slider li .onedrive article {
+  color: #0678d3;
 }
 .progream .inner #slider li .onedrive article button {
   margin-top: 20px;
@@ -565,7 +593,7 @@ header.on .inner {
   .progream .inner #slider li {
     width: 100%;
     height: 100%;
-    float: left;
+    float: both;
   }
   .progream .inner #slider li .pic {
     width: 100%;
@@ -582,6 +610,9 @@ header.on .inner {
     margin-left: 0;
     padding: 10px;
     margin: 0;
+  }
+  .progream .inner #slider li .pic article h2 {
+    display: block;
   }
   .progream .inner #slider li .pic article h3 {
     color: black;
@@ -617,39 +648,23 @@ header.on .inner {
   .progream .inner #slider li:last-child {
     display: none;
   }
-  .progream .inner #slider li .excel article button {
-    border: 1px solid #217345;
-  }
   .progream .inner #slider li .excel article button:nth-of-type(2) {
     background-color: #217345;
-  }
-  .progream .inner #slider li .word article button {
-    border: 1px solid #185abd;
   }
   .progream .inner #slider li .word article button:last-child {
     background-color: #185abd;
   }
-  .progream .inner #slider li .powerpoint article button {
-    border: 1px solid #d24726;
-  }
   .progream .inner #slider li .powerpoint article button:last-child {
     background-color: #d24726;
   }
-  .progream .inner #slider li .access article button {
-    border: 1px solid #a4373a;
-  }
   .progream .inner #slider li .access article button:last-child {
     background-color: #a4373a;
-  }
-  .progream .inner #slider li .teams article button {
-    border: 1px solid #444bb1;
   }
   .progream .inner #slider li .teams article button:last-child {
     background-color: #444bb1;
   }
   .progream .inner #slider li .onedrive article button {
     margin-top: 20px;
-    border: 1px solid #0678d3;
   }
   .progream .inner #slider li .onedrive article button:last-child {
     background-color: #0678d3;
@@ -676,6 +691,11 @@ section.data_page .inner {
   height: 900px;
   margin: 0 auto;
   display: flex;
+}
+section.data_page .inner::before {
+  content: "";
+  display: block;
+  clear: both;
 }
 section.data_page .inner .left_side {
   width: 560px;
@@ -751,9 +771,7 @@ section.data_page .inner .right_side .pic .left, section.data_page .inner .right
   height: 100%;
   display: flex;
   flex-direction: column;
-  border: 1px solid rgba(40, 44, 55, 0.3);
-  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
+  box-shadow: 0 0 16px 10px rgba(0, 0, 0, 0.08);
 }
 section.data_page .inner .right_side .pic .left article, section.data_page .inner .right_side .pic .right article {
   width: 280px;
@@ -846,7 +864,7 @@ section.data_page.on .inner .right_side .pic .right {
 @media screen and (max-width: 539px) {
   section.data_page {
     width: 100%;
-    height: 100vh;
+    height: 170vh;
     padding: 200px 0;
   }
   section.data_page .inner {
@@ -870,7 +888,35 @@ section.data_page.on .inner .right_side .pic .right {
     width: 82%;
   }
   section.data_page .inner .right_side {
-    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  section.data_page .inner .right_side .pic .left, section.data_page .inner .right_side .pic .right {
+    width: 100%;
+    box-shadow: none;
+  }
+  section.data_page .inner .right_side .pic .left article, section.data_page .inner .right_side .pic .right article {
+    width: 100%;
+  }
+  section.data_page .inner .right_side .pic .left article i, section.data_page .inner .right_side .pic .right article i {
+    width: 100px;
+    height: 100px;
+    font-size: 60px;
+  }
+  section.data_page .inner .right_side .pic .left article p, section.data_page .inner .right_side .pic .right article p {
+    font-size: 4vw;
+  }
+  section.data_page .inner .right_side .pic .left {
+    margin-top: 0;
+  }
+  section.data_page .inner .right_side .pic .right {
+    margin-top: 0;
+  }
+  section.data_page .inner .right_side .pic .right article {
+    transform: scale(0.8);
+  }
+  section.data_page.on .inner .right_side .pic .left, section.data_page.on .inner .right_side .pic .right {
+    margin: 0;
   }
 }
 .introduction {
@@ -901,6 +947,11 @@ section.data_page.on .inner .right_side .pic .right {
 }
 .introduction .inner .wrap {
   width: 100%;
+}
+.introduction .inner .wrap::before {
+  content: "";
+  display: block;
+  clear: both;
 }
 .introduction .inner .wrap article {
   width: 380px;
@@ -1124,6 +1175,7 @@ footer .inner p {
   position: relative;
 }
 .information nav {
+  display: none;
   width: 150px;
   height: 120px;
   position: fixed;
@@ -1838,12 +1890,16 @@ footer .inner p {
     font: 3vw/1 "arial";
     margin-bottom: 30px;
   }
+  .type {
+    height: 100%;
+  }
   .type h2 {
     width: 100vw;
-    font: 4vw/1 "Rubik";
+    font: 3.5vw/1 "Rubik";
     transform: translateY(65%);
     opacity: 0;
     transition: 0.5s;
+    margin-top: 40px;
   }
   .type .btn {
     width: 100vw;
@@ -1958,6 +2014,7 @@ footer .inner p {
 }
 .support .inner article table tbody tr td {
   padding: 16px 0;
+  cursor: default;
 }
 .support .inner article table tbody tr td span {
   background-color: #4d6ee4;
@@ -1977,10 +2034,6 @@ footer .inner p {
   width: 745px;
   text-align: left;
   font-weight: bold;
-  cursor: pointer;
-}
-.support .inner article table tbody tr td:nth-of-type(3):hover {
-  text-decoration: underline;
 }
 .support .inner article table tbody tr td:nth-of-type(4) {
   width: 110px;
@@ -1989,35 +2042,32 @@ footer .inner p {
 .support .inner article.on {
   opacity: 1;
 }
-.support .inner article.Announcement table thead tr th:nth-of-type(1) {
+.support .inner .Announcement table thead tr th:nth-of-type(1) {
   width: 75px;
 }
-.support .inner article.Announcement table thead tr th:nth-of-type(2) {
+.support .inner .Announcement table thead tr th:nth-of-type(2) {
   width: 995px;
 }
-.support .inner article.Announcement table thead tr th:nth-of-type(3) {
-  width: 110px;
+.support .inner .Announcement table thead tr th:nth-of-type(3) {
+  width: 120px;
+  font-weight: normal;
 }
-.support .inner article.Announcement table tbody tr td:nth-of-type(1) {
+.support .inner .Announcement table tbody tr td:nth-of-type(1) {
   width: 75px;
 }
-.support .inner article.Announcement table tbody tr td:nth-of-type(2) {
-  width: 995px;
+.support .inner .Announcement table tbody tr td.title {
+  width: 975px;
   text-align: left;
   font-weight: bold;
   padding: 16px 10px;
   cursor: pointer;
 }
-.support .inner article.Announcement table tbody tr td:nth-of-type(2):hover {
+.support .inner .Announcement table tbody tr td.title:hover {
   text-decoration: underline;
 }
-.support .inner article.Announcement table tbody tr td:nth-of-type(3) {
-  width: 110px;
+.support .inner .Announcement table tbody tr td:nth-of-type(3) {
+  width: 120px;
   text-align: center;
-  cursor: default;
-}
-.support .inner article.Announcement table tbody tr td:nth-of-type(3):hover {
-  text-decoration: none;
 }
 .support.on {
   opacity: 1;

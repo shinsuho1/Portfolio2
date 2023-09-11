@@ -25,6 +25,11 @@
         }
         .wrap{
             width: 100%;
+            &::before{
+                content: '';
+                display: block;
+                clear: both;
+            }
             article{
                 width: 380px;
                 height: 240px;

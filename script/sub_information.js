@@ -8,12 +8,16 @@ const address = document.querySelector(".address");
 // console.log(lis);
 let posArr = [];
 
-setInterval(() => {
+setTimeout(() => {
     main.classList.add("atvie");
+}, 300);
+
+setInterval(() => {
     article[0].classList.add("first");
     article[1].classList.add("first");
+    article[2].classList.add("first");
 
-}, 300);
+}, 800);
 
 
 setPos()
@@ -22,27 +26,6 @@ function setPos(){
         posArr.push(el.offsetTop);
     }
 }
-
-window.addEventListener("scroll",()=>{
-    let scroll = window.scrollY;
-    article_arr.map((el,index)=>{
-        if(scroll >= posArr[index]-190){
-            for(let i = 0; i<3;i++){
-                lis[i].classList.remove("on");
-                // article_arr[i].classList.remove("on");
-
-            }
-            lis[index].classList.add("on");
-            // console.log(scroll);
-            article_arr[index].classList.add("first");
-        }
-        if(scroll >= 600){
-            address.classList.add("first");
-        }
-    });
-});
-
-
 
 for(let el of article_arr){
     article_arr.splice(2,1);
