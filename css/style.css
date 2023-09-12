@@ -1557,6 +1557,24 @@ footer .inner p {
   margin-top: 100px;
   transition: 1.5s;
 }
+.news h1 {
+  font: bold 50px/1 "arial";
+  color: #000;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  transition: 0.5s;
+  position: absolute;
+  opacity: 0;
+  top: 100px;
+}
+.news h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.news h1 span::before {
+  content: "/";
+  margin: 0 20px 0 10px;
+}
 .news .tab {
   width: 350px;
   height: 1000px;
@@ -1660,12 +1678,20 @@ footer .inner p {
   opacity: 1;
   margin-top: 0px;
 }
+.news.on h1 {
+  opacity: 1;
+  top: 40px;
+}
 
 @media screen and (max-width: 539px) {
   .news {
     width: 100%;
     height: 100%;
-    padding: 10vh 0;
+    padding: 3vh 0 5vh 0;
+  }
+  .news h1 {
+    margin-left: 20px;
+    font-size: 30px;
   }
   .news .tab {
     display: none;
@@ -1713,7 +1739,7 @@ footer .inner p {
     font-size: 3.5vw;
   }
   .news .inner article:last-child {
-    margin-top: 100px;
+    margin-top: 0px;
   }
 }
 .download {
@@ -1922,6 +1948,7 @@ footer .inner p {
 @media screen and (max-width: 539px) {
   .download {
     width: 100%;
+    height: 80vh;
     padding-bottom: 0;
   }
   .download .img {
@@ -1984,25 +2011,25 @@ footer .inner p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 20px 0;
+    padding: 20px;
   }
   .type h2 {
     width: 100vw;
-    font: 3.5vw/1 "Rubik";
+    font: 3.2vw/1 "Rubik";
     opacity: 1;
-    margin-bottom: 20px;
+    transform: translateY(0%);
   }
   .type .btn {
     width: 100%;
-    height: 30px;
+    height: 100%;
     display: block;
     opacity: 1;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
   }
   .type .btn a {
     height: 100%;
-    font: bold 3vw "arial";
+    font: bold 2.5vw "arial";
     opacity: 1;
   }
   .type.active .btn a {

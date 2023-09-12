@@ -7,6 +7,24 @@
     opacity: 0;
     margin-top: 100px;
     transition: 1.5s;
+    h1{
+        font: bold 50px/1 "arial";
+        color: #000;
+        margin-bottom: 20px;
+        margin-top: 80px;
+        transition: 0.5s;
+        position: absolute;
+        opacity: 0;
+        top: 100px;
+        span{
+            font: normal 20px/1 "맑은 고딕";
+            color: #aaa;
+            &::before{
+                content: "/";
+                margin: 0 20px 0 10px;
+            }
+        }
+    }
     .tab{
         width: 350px;
         height: 1000px;
@@ -61,6 +79,7 @@
         width: 800px;
         height: 1200px;
         position: relative;
+        
         article{
             width: 100%;
             height: 1200px;
@@ -114,6 +133,10 @@
     }
 
     &.on{
+        h1{
+            opacity: 1;
+            top: 40px;
+        }
         opacity: 1;
         margin-top: 0px;
     }
@@ -123,7 +146,11 @@
     .news{
         width: 100%;
         height: 100%;
-        padding: 10vh 0;
+        padding: 3vh 0 5vh 0;
+        h1{
+            margin-left: 20px;
+            font-size: 30px;
+        }
         .tab{
             display: none;
         }
@@ -170,7 +197,7 @@
                 }
 
                 &:last-child{
-                    margin-top: 100px;
+                    margin-top: 0px;
                 }
             }
         }
