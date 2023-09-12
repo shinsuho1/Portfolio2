@@ -260,6 +260,157 @@
     }
 }
 
-@media screen and (max-width: 539px){
 
+
+@media screen and (max-width: 539px){
+    .progream{
+        width: 100%;
+        height: 130vh;
+        padding: 100px 0;
+        .inner{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            div.title{
+                display: none;
+            }
+    
+            #slider{
+                li{
+                    width: 16.6%;    
+                    .pic{
+                        article{
+                            width: 100%;
+                            height: 100%;
+                            padding: 10px;
+                            margin: 0;
+                            display: flex;
+                            flex-direction: column;
+                            h2{
+                                display: block;
+                            }
+                            h3{
+                                font-size: 5vw;
+                            }
+                            p{
+                            }
+
+                            .btn{
+                                display: none;
+                                position: relative;
+                                bottom: -400px;
+                                margin-top: 20px;
+                                button{
+                                    background-color:#fff;
+                                    border-radius: 50px;
+                                    width: 200px;
+                                    height: 35px;                                
+                                    cursor: pointer;
+                                    font: 15px/35px "Pretendard-Regular";
+                                    &:last-child{
+                                        color: #fff;
+                                    }
+                                }
+                            }
+    
+                            img{
+                                object-fit: contain;
+                            }
+                        }
+                    }
+                    .excel{
+                        article{
+                            h2{
+                                color: #217345;
+                            }
+                            button{
+                                border: 1px solid #217345;
+                                &:nth-of-type(2){
+                                background-color: #217345;
+                                }
+                            }    
+                        }
+                        
+                    }
+                    .word{
+                        article{
+                            h2{
+                                color: #185abd;
+                            }
+                            button{
+                                border: 1px solid #185abd;
+                                &:last-child{
+                                    background-color:#185abd;
+                                }
+                            }
+                        }
+                       
+                                
+                    }
+                    .powerpoint{
+                        article{
+                            h2{
+                                color: #d24726;
+                            }
+                            button{
+                                border: 1px solid #d24726;
+                                &:last-child{
+                                    background-color: #d24726;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .access{
+                        article{
+                            h2{
+                                color: #a4373a;
+                            }
+                            button{
+                                border: 1px solid #a4373a;
+                                &:last-child{
+                                    background-color: #a4373a;
+                                }
+                            }
+                        }
+                        
+                    }
+                    .teams{
+                        article{
+                            button{
+                                border: 1px solid #444bb1;
+                                &:last-child{
+                                    background-color: #444bb1;
+                                }
+                        }
+                        }
+                       
+                    }
+                    .onedrive{
+                        article{
+                            color: #0678d3;
+                            button{
+                                margin-top: 20px;
+                                border: 1px solid #0678d3;
+                                &:last-child{
+                                    background-color: #0678d3;
+                                } 
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .prev{
+                top: 50%;
+    
+            }
+            .next{
+                top: 50%;
+            }
+        }
+    }
 }

@@ -239,7 +239,7 @@ section.data_page{
     section.data_page{
         width: 100%;
         height: 150vh;
-        padding: 200px 0;
+        padding: 100px 0;
         
         .inner{
             width: 100%;
@@ -254,10 +254,10 @@ section.data_page{
                     
                     h1{
                         margin: 10vw 0 10px 50px;
-                        font: bold 32px/1.3 "airal";
+                        font: bold 6vw/1.3 "airal";
                     }
                     p{
-                        margin: 0 50px 0 50px;
+                        margin: 10px 10px 10px 50px
                     }
                 }
                 .sub_text{
@@ -273,12 +273,15 @@ section.data_page{
             .right_side{
                 width: 100%;
                 height: 100%;
+                margin: 0 auto;
                 .pic{
                     .left, .right{
                         width: 100%;
                         box-shadow: none;
                         article{
-                            width: 100%;
+                            width: 80%;
+                            height: 100%;
+                            margin: 0 auto;
                             i{
                                 width: 100px;
                                 height: 100px;
@@ -286,16 +289,47 @@ section.data_page{
                             }
                             p{
                                 font-size: 4vw;
+                                opacity: 1;
+                                margin-top: 0px;
                             }
                         }
                     }
                     .left{
-                        margin-top: 0;
+                        width: 40vw;
+                        opacity: 1;
+                        margin-top: 0px;
                     }
                     .right{
-                        margin-top: 0;
+                        width: 40vw;
+                        opacity: 1;
+                        margin-top: 0px;
                         article{
-                            transform: scale(0.8);
+                            i{
+                                transform: scale(1);
+                                margin-bottom: 20px;
+                            }
+                            .name{
+                                margin-top: 30px;
+                                width: 78.13%;
+                                height: 48.19%;
+                                border-radius: 50%;
+                                h2{
+                                    font-size: 6vw;
+                                }
+                                p{
+                                    width: 120px;
+                                    position: absolute;
+                                    bottom: -60px;
+                                    color: #000;
+                                    margin: 0;
+                                    font-size: 3.5vw;
+                                    font-weight: bold;
+                                }
+                            }
+                            &:nth-of-type(2){
+                                justify-content: start;
+                                align-items: center;
+                            }
                         }
                     }
                 }

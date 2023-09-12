@@ -567,6 +567,118 @@ header.on .inner {
   bottom: 0px;
 }
 
+@media screen and (max-width: 539px) {
+  .progream {
+    width: 100%;
+    height: 130vh;
+    padding: 100px 0;
+  }
+  .progream .inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .progream .inner div.title {
+    display: none;
+  }
+  .progream .inner #slider li {
+    width: 16.6%;
+  }
+  .progream .inner #slider li .pic article {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .progream .inner #slider li .pic article h2 {
+    display: block;
+  }
+  .progream .inner #slider li .pic article h3 {
+    font-size: 5vw;
+  }
+  .progream .inner #slider li .pic article .btn {
+    display: none;
+    position: relative;
+    bottom: -400px;
+    margin-top: 20px;
+  }
+  .progream .inner #slider li .pic article .btn button {
+    background-color: #fff;
+    border-radius: 50px;
+    width: 200px;
+    height: 35px;
+    cursor: pointer;
+    font: 15px/35px "Pretendard-Regular";
+  }
+  .progream .inner #slider li .pic article .btn button:last-child {
+    color: #fff;
+  }
+  .progream .inner #slider li .pic article img {
+    object-fit: contain;
+  }
+  .progream .inner #slider li .excel article h2 {
+    color: #217345;
+  }
+  .progream .inner #slider li .excel article button {
+    border: 1px solid #217345;
+  }
+  .progream .inner #slider li .excel article button:nth-of-type(2) {
+    background-color: #217345;
+  }
+  .progream .inner #slider li .word article h2 {
+    color: #185abd;
+  }
+  .progream .inner #slider li .word article button {
+    border: 1px solid #185abd;
+  }
+  .progream .inner #slider li .word article button:last-child {
+    background-color: #185abd;
+  }
+  .progream .inner #slider li .powerpoint article h2 {
+    color: #d24726;
+  }
+  .progream .inner #slider li .powerpoint article button {
+    border: 1px solid #d24726;
+  }
+  .progream .inner #slider li .powerpoint article button:last-child {
+    background-color: #d24726;
+  }
+  .progream .inner #slider li .access article h2 {
+    color: #a4373a;
+  }
+  .progream .inner #slider li .access article button {
+    border: 1px solid #a4373a;
+  }
+  .progream .inner #slider li .access article button:last-child {
+    background-color: #a4373a;
+  }
+  .progream .inner #slider li .teams article button {
+    border: 1px solid #444bb1;
+  }
+  .progream .inner #slider li .teams article button:last-child {
+    background-color: #444bb1;
+  }
+  .progream .inner #slider li .onedrive article {
+    color: #0678d3;
+  }
+  .progream .inner #slider li .onedrive article button {
+    margin-top: 20px;
+    border: 1px solid #0678d3;
+  }
+  .progream .inner #slider li .onedrive article button:last-child {
+    background-color: #0678d3;
+  }
+  .progream .inner .prev {
+    top: 50%;
+  }
+  .progream .inner .next {
+    top: 50%;
+  }
+}
 section.data_page {
   width: 100%;
   height: 100vh;
@@ -752,7 +864,7 @@ section.data_page.on .inner .right_side .pic .right {
   section.data_page {
     width: 100%;
     height: 150vh;
-    padding: 200px 0;
+    padding: 100px 0;
   }
   section.data_page .inner {
     width: 100%;
@@ -769,10 +881,10 @@ section.data_page.on .inner .right_side .pic .right {
   }
   section.data_page .inner .left_side .main_text h1 {
     margin: 10vw 0 10px 50px;
-    font: bold 32px/1.3 "airal";
+    font: bold 6vw/1.3 "airal";
   }
   section.data_page .inner .left_side .main_text p {
-    margin: 0 50px 0 50px;
+    margin: 10px 10px 10px 50px;
   }
   section.data_page .inner .left_side .sub_text .table .data {
     width: 82%;
@@ -780,13 +892,16 @@ section.data_page.on .inner .right_side .pic .right {
   section.data_page .inner .right_side {
     width: 100%;
     height: 100%;
+    margin: 0 auto;
   }
   section.data_page .inner .right_side .pic .left, section.data_page .inner .right_side .pic .right {
     width: 100%;
     box-shadow: none;
   }
   section.data_page .inner .right_side .pic .left article, section.data_page .inner .right_side .pic .right article {
-    width: 100%;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
   }
   section.data_page .inner .right_side .pic .left article i, section.data_page .inner .right_side .pic .right article i {
     width: 100px;
@@ -795,15 +910,44 @@ section.data_page.on .inner .right_side .pic .right {
   }
   section.data_page .inner .right_side .pic .left article p, section.data_page .inner .right_side .pic .right article p {
     font-size: 4vw;
+    opacity: 1;
+    margin-top: 0px;
   }
   section.data_page .inner .right_side .pic .left {
-    margin-top: 0;
+    width: 40vw;
+    opacity: 1;
+    margin-top: 0px;
   }
   section.data_page .inner .right_side .pic .right {
-    margin-top: 0;
+    width: 40vw;
+    opacity: 1;
+    margin-top: 0px;
   }
-  section.data_page .inner .right_side .pic .right article {
-    transform: scale(0.8);
+  section.data_page .inner .right_side .pic .right article i {
+    transform: scale(1);
+    margin-bottom: 20px;
+  }
+  section.data_page .inner .right_side .pic .right article .name {
+    margin-top: 30px;
+    width: 78.13%;
+    height: 48.19%;
+    border-radius: 50%;
+  }
+  section.data_page .inner .right_side .pic .right article .name h2 {
+    font-size: 6vw;
+  }
+  section.data_page .inner .right_side .pic .right article .name p {
+    width: 120px;
+    position: absolute;
+    bottom: -60px;
+    color: #000;
+    margin: 0;
+    font-size: 3.5vw;
+    font-weight: bold;
+  }
+  section.data_page .inner .right_side .pic .right article:nth-of-type(2) {
+    justify-content: start;
+    align-items: center;
   }
   section.data_page.on .inner .right_side .pic .left, section.data_page.on .inner .right_side .pic .right {
     margin: 0;
@@ -1026,6 +1170,10 @@ footer .inner p {
 }
 
 @media screen and (max-width: 539px) {
+  footer {
+    padding: 20px 0;
+    margin-top: 0;
+  }
   footer .inner {
     width: 100%;
     padding: 20px;
@@ -1116,6 +1264,7 @@ footer .inner p {
   background-color: #fff;
   margin-left: -150px;
   opacity: 0;
+  border-radius: 5px;
   cursor: pointer;
 }
 .information > .inner article .pic {
@@ -1349,7 +1498,7 @@ footer .inner p {
   .information > .inner article {
     width: 90vw;
     border: none;
-    border-radius: 0%;
+    border-radius: 5px;
     cursor: pointer;
   }
   .information > .inner article .pic {
@@ -1760,6 +1909,7 @@ footer .inner p {
 @media screen and (max-width: 539px) {
   .download {
     width: 100%;
+    padding-bottom: 0;
   }
   .download .img {
     width: 100%;
@@ -1818,6 +1968,7 @@ footer .inner p {
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -1828,14 +1979,16 @@ footer .inner p {
     opacity: 1;
     transition: 0.5s;
     margin-bottom: 10px;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .type .btn {
     width: 100vw;
-    height: 40px;
+    height: 30px;
     display: block;
     opacity: 1;
     text-align: center;
+    margin-top: 0px;
+    padding: 40px 0;
   }
   .type .btn a {
     height: 100%;
