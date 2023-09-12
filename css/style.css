@@ -1680,6 +1680,7 @@ footer .inner p {
     clear: both;
   }
   .news .inner article {
+    height: 100%;
     position: relative;
     opacity: 1;
     display: block;
@@ -1696,6 +1697,16 @@ footer .inner p {
     height: 1px;
     background-color: #bebebe;
     margin-bottom: 30px;
+  }
+  .news .inner article > .txt {
+    margin-bottom: 10px;
+  }
+  .news .inner article .pic {
+    height: 30%;
+  }
+  .news .inner article .pic img {
+    height: 100%;
+    object-fit: contain;
   }
   .news .inner article > p {
     font-size: 3.5vw;
@@ -1938,10 +1949,10 @@ footer .inner p {
   }
   .version {
     width: 100%;
-    height: 40vh;
+    height: 30vh;
   }
   .version h2 {
-    font: bold 6vw/1.2 "Rubik";
+    font: bold 5.5vw/1.2 "Rubik";
   }
   .version ul {
     width: 100%;
@@ -1951,9 +1962,9 @@ footer .inner p {
     margin-right: 0px;
   }
   .version ul li i {
-    width: 50px;
-    height: 50px;
-    font-size: 50px;
+    width: 45px;
+    height: 45px;
+    font-size: 45px;
   }
   .version ul li h3 {
     font: 3vw/1 "Rubik";
@@ -1972,24 +1983,20 @@ footer .inner p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 20px 0;
   }
   .type h2 {
     width: 100vw;
     font: 3.5vw/1 "Rubik";
-    transform: translateY(65%);
     opacity: 1;
-    transition: 0.5s;
-    margin-bottom: 10px;
-    margin-top: 0px;
   }
   .type .btn {
-    width: 100vw;
+    width: 100%;
     height: 30px;
     display: block;
     opacity: 1;
     text-align: center;
-    margin-top: 0px;
-    padding: 40px 0;
+    margin-top: 20px;
   }
   .type .btn a {
     height: 100%;

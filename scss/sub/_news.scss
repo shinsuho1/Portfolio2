@@ -137,6 +137,7 @@
                 clear: both;
             }
             article{
+                height: 100%;
                 position: relative;
                 opacity: 1;
                 display: block;
@@ -152,6 +153,16 @@
                         height: 1px;
                         background-color: #bebebe;
                         margin-bottom: 30px;
+                    }
+                }
+                >.txt{
+                    margin-bottom: 10px;
+                }
+                .pic{
+                    height: 30%;
+                    img{
+                        height: 100%;
+                        object-fit: contain;
                     }
                 }
                 >p{
