@@ -2044,8 +2044,8 @@ footer .inner p {
   padding: 100px 0;
   display: flex;
   flex-direction: column;
-  opacity: 0;
-  margin-top: 80px;
+  opacity: 1;
+  margin-top: 0px;
   transition: 1s;
 }
 .support .inner {
@@ -2075,23 +2075,24 @@ footer .inner p {
 .support .inner article {
   width: 1180px;
   height: 100%;
+  display: none;
   opacity: 0;
   position: absolute;
 }
-.support .inner article .title {
+.support .inner article > .title {
   position: relative;
   display: flex;
   justify-content: space-between;
 }
-.support .inner article .title h3 {
+.support .inner article > .title h3 {
   font: bold 40px "arial";
   margin-bottom: 20px;
 }
-.support .inner article .title h3 span {
+.support .inner article > .title h3 span {
   font: normal 20px/1 "맑은 고딕";
   color: #aaa;
 }
-.support .inner article .title h3 span::before {
+.support .inner article > .title h3 span::before {
   content: "/";
   margin: 0 20px 0 10px;
 }
@@ -2109,7 +2110,7 @@ footer .inner p {
   width: 75px;
 }
 .support .inner article table thead tr th:nth-of-type(2) {
-  width: 250px;
+  width: 220px;
 }
 .support .inner article table thead tr th:nth-of-type(3) {
   width: 745px;
@@ -2122,13 +2123,8 @@ footer .inner p {
   border-bottom: 1px solid gray;
   padding: 0 1.5vh;
 }
-.support .inner article table tbody tr {
-  border-bottom: 1px solid gray;
-  height: 53px;
-}
 .support .inner article table tbody tr td {
   padding: 16px 0;
-  cursor: default;
 }
 .support .inner article table tbody tr td span {
   background-color: #4d6ee4;
@@ -2141,115 +2137,68 @@ footer .inner p {
   text-align: center;
 }
 .support .inner article table tbody tr td:nth-of-type(2) {
-  width: 250px;
+  width: 200px;
   text-align: center;
 }
 .support .inner article table tbody tr td:nth-of-type(3) {
-  width: 745px;
+  width: 755px;
   text-align: left;
   font-weight: bold;
+  padding: 16px 0 16px 10px;
+  cursor: pointer;
+}
+.support .inner article table tbody tr td:nth-of-type(3):hover {
+  text-decoration: underline;
 }
 .support .inner article table tbody tr td:nth-of-type(4) {
   width: 110px;
   text-align: center;
 }
 .support .inner article.on {
+  display: block;
   opacity: 1;
 }
-.support .inner .QNA .title div.icon {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  align-items: end;
-  margin-bottom: 10px;
-}
-.support .inner .QNA .title div.icon i {
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  cursor: pointer;
-}
-.support .inner .QNA table {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.support .inner .QNA table thead tr th:nth-of-type(1) {
-  width: 75px;
-}
-.support .inner .QNA table thead tr th:nth-of-type(2) {
-  width: 250px;
-}
-.support .inner .QNA table thead tr th:nth-of-type(3) {
-  width: 745px;
-}
-.support .inner .QNA table thead tr th:nth-of-type(4) {
-  width: 110px;
-}
-.support .inner .QNA table tbody {
-  justify-content: left;
+.support .inner .Announcement table thead {
   border-bottom: 1px solid gray;
-  padding: 0 1.5vh;
-}
-.support .inner .QNA table tbody tr {
-  border-bottom: 1px solid gray;
-  height: 53px;
-}
-.support .inner .QNA table tbody tr td {
-  padding: 16px 0;
-  cursor: default;
-}
-.support .inner .QNA table tbody tr td span {
-  background-color: #4d6ee4;
-  font-size: 14px;
-  color: #fff;
-  padding: 2px 8px;
-}
-.support .inner .QNA table tbody tr td:nth-of-type(1) {
-  width: 75px;
-  text-align: center;
-}
-.support .inner .QNA table tbody tr td:nth-of-type(2) {
-  width: 250px;
-  text-align: center;
-}
-.support .inner .QNA table tbody tr td:nth-of-type(3) {
-  width: 745px;
-  text-align: left;
-  font-weight: bold;
-}
-.support .inner .QNA table tbody tr td:nth-of-type(4) {
-  width: 110px;
-  text-align: center;
-}
-.support .inner .QNA.on {
-  opacity: 1;
+  border-top: 2px solid #333;
+  padding: 1.5vh;
 }
 .support .inner .Announcement table thead tr th:nth-of-type(1) {
   width: 75px;
 }
 .support .inner .Announcement table thead tr th:nth-of-type(2) {
-  width: 995px;
+  width: 950px;
 }
 .support .inner .Announcement table thead tr th:nth-of-type(3) {
-  width: 120px;
-  font-weight: normal;
+  width: 110px;
+}
+.support .inner .Announcement table tbody {
+  justify-content: left;
+  border-bottom: 1px solid gray;
+  padding: 0 1.5vh;
+}
+.support .inner .Announcement table tbody tr td span {
+  background-color: #4d6ee4;
+  font-size: 14px;
+  color: #fff;
+  padding: 2px 8px;
 }
 .support .inner .Announcement table tbody tr td:nth-of-type(1) {
   width: 75px;
+  text-align: center;
 }
-.support .inner .Announcement table tbody tr td.title {
-  width: 975px;
+.support .inner .Announcement table tbody tr td:nth-of-type(2) {
+  width: 950px;
   text-align: left;
   font-weight: bold;
-  padding: 16px 10px;
+  padding: 16px 0 16px 10px;
   cursor: pointer;
 }
-.support .inner .Announcement table tbody tr td.title:hover {
+.support .inner .Announcement table tbody tr td:nth-of-type(2):hover {
   text-decoration: underline;
 }
 .support .inner .Announcement table tbody tr td:nth-of-type(3) {
-  width: 120px;
+  width: 110px;
   text-align: center;
 }
 .support.on {
