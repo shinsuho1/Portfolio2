@@ -932,6 +932,7 @@ section.data_page.on .inner .right_side .pic .right {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    border: none;
   }
   section.data_page .inner .right_side .pic .right article .name h2 {
     font-size: 6vw;
@@ -1983,12 +1984,13 @@ footer .inner p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 0;
+    padding: 0 0 20px 0;
   }
   .type h2 {
     width: 100vw;
     font: 3.5vw/1 "Rubik";
     opacity: 1;
+    margin-bottom: 20px;
   }
   .type .btn {
     width: 100%;

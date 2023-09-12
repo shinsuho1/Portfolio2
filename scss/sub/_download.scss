@@ -285,11 +285,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 20px 0;
+        padding: 0 0 20px 0;
         h2{
             width: 100vw;
             font: 3.5vw/1 "Rubik";
             opacity: 1; 
+            margin-bottom: 20px;
         }
         .btn{
             width: 100%;
