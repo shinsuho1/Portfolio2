@@ -929,20 +929,20 @@ section.data_page.on .inner .right_side .pic .right {
   }
   section.data_page .inner .right_side .pic .right article .name {
     margin-top: 30px;
-    width: 78.13%;
-    height: 48.19%;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
   }
   section.data_page .inner .right_side .pic .right article .name h2 {
     font-size: 6vw;
   }
   section.data_page .inner .right_side .pic .right article .name p {
-    width: 120px;
+    width: 160px;
     position: absolute;
     bottom: -60px;
     color: #000;
     margin: 0;
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-weight: bold;
   }
   section.data_page .inner .right_side .pic .right article:nth-of-type(2) {
@@ -1179,13 +1179,14 @@ footer .inner p {
     padding: 20px;
   }
   footer .inner h1 {
-    font-size: 5vw;
+    font-size: 3.5vw;
+    margin-bottom: 2vh;
   }
   footer .inner ul li a {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   footer .inner p {
-    font-size: 2.5vw;
+    font-size: 2.3vw;
     line-height: 1.2;
     text-align: center;
     margin: 0 20px 0 20px;
