@@ -174,27 +174,8 @@ header{
 
 
 
-
 @media screen and (max-width:1179px){
     header{
-        .inner{
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            .menuWeb{
-                display: none;
-            }
-
-            .btnCall{
-                display: block;
-            }
-
-            .menuMo{
-                display: block;
-            }
-        }
-    }
-    #header_sub{
         .inner{
             width: 100%;
             display: flex;

@@ -63,36 +63,4 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 var zoomControl = new kakao.maps.ZoomControl();
 map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 
-/* 1차 코드 (포인터를 넣기위해서 수정)
-markerOptions.map((el,index)=>{
-    btns[index].addEventListener("click",(e)=>{
-        e.preventDefault();
-
-        for(let i = 0; i<markerOptions.length ; i++){
-            btns[i].classList.remove("on");
-        }
-
-        btns[index].classList.add("on");
-
-        const main_txt = document.querySelector(".location>.txt");
-        let title = main_txt.querySelector(".title");
-        title.innerText = markerOptions[index].title;
-
-        let office_name = main_txt.querySelector(".office_name");
-        office_name.innerText = markerOptions[index].office_name;
-
-        let address = main_txt.querySelector(".address");
-        address.innerText = markerOptions[index].address;
-
-        
-
-        map.setCenter(markerOptions[index].latlng);
-        var markerPosition = markerOptions[index].latlng;
-        var marker = new kakao.maps.Marker({
-            position: markerPosition
-        });
-        marker.setMap(map);
-    });
-});
-*/
 

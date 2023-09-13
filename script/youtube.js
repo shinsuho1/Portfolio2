@@ -8,8 +8,6 @@ let count = "1";
 const url = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&key=${key}&playlistId=${playListId}&maxResults=${count}`;
 
 const openBtn = document.querySelector(".main>.title>.btn");
-console.log(openBtn);
-
 
 openBtn.addEventListener("click",(e)=>{
     e.preventDefault();
@@ -26,7 +24,6 @@ openBtn.addEventListener("click",(e)=>{
 });
 vidList.addEventListener("click",(e)=>{
     const pop = vidList.querySelector(".pop");
-    // pop이 존재하면 밑에 if문으로 코드를 시작하고 없으면 pop이 없으면 무시되어 실행되지 않음
     if(pop){
         const close = pop.querySelector("span>img");
         if(e.target == close) {

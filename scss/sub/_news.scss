@@ -27,7 +27,7 @@
     }
     .tab{
         width: 350px;
-        height: 1000px;
+        height: 800px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -77,12 +77,12 @@
     }
     .inner{
         width: 800px;
-        height: 1200px;
+        height: 1000px;
         position: relative;
         
         article{
             width: 100%;
-            height: 1200px;
+            height: 100%;
             position: absolute;
             top: 50px;
             right: 0;

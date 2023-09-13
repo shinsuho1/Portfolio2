@@ -16,10 +16,9 @@ function setPos(){
         posArr.push(el.offsetTop)
     }
 }
-console.log(posArr);
+
 window.addEventListener("scroll",()=>{
     let scroll = window.scrollY;
-    // console.log(scroll);
     section_arr.map((el,index)=>{
         if(scroll >= posArr[index]-400){
             section_arr[index].classList.add("on");

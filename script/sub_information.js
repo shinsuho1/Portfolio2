@@ -5,7 +5,6 @@ const main = document.querySelector(".content");
 const aside = document.querySelector("aside");
 const close = aside.querySelector("span");
 const address = document.querySelector(".address");
-// console.log(lis);
 let posArr = [];
 
 setTimeout(() => {
@@ -33,7 +32,6 @@ for(let el of article_arr){
         let tit = e.currentTarget.querySelector("h2").innerText;
         let txt = e.currentTarget.querySelector("p").innerText;
         let img = e.currentTarget.querySelector("img").getAttribute("src");
-        console.log(img);
         let imgSrc = img.replace("article_1","article_2");
         
         aside.querySelector("h1").innerText = tit;

@@ -1,6 +1,4 @@
-// slider(article)
 const slider = document.querySelector("#slider");
-// title(h1,h2)
 const title = document.querySelector("#title");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
