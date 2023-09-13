@@ -66,48 +66,13 @@ header .inner .menuWeb #gnb li:hover a::after {
   display: block;
   box-shadow: 0 0 16px 5px rgba(40, 44, 55, 0.1);
 }
-header .inner .menuWeb #toggleBtn {
-  margin-left: 14px;
-}
-header .inner .menuWeb #toggleBtn .toggleSwitch {
-  width: 140px;
-  height: 40px;
-  display: block;
-  position: relative;
-  border-radius: 30px;
-  background-color: #fff;
-  border: 1px solid #6a88d8;
-  box-shadow: 0 0 16px 3px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: all 0.2s ease-in;
-}
-header .inner .menuWeb #toggleBtn .toggleSwitch .toggleButton {
-  width: 60px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  left: 4px;
-  transform: translateY(-50%);
-  border-radius: 100px;
-  background: #6a88d8;
-  transition: all 0.2s ease-in;
-  font: bold 18px/30px "Montserrats";
-  color: #fff;
-  text-align: center;
-}
-header .inner .menuWeb #toggleBtn #toggle:checked ~ .toggleSwitch {
-  background: #6a88d8;
-}
-header .inner .menuWeb #toggleBtn #toggle:checked ~ .toggleSwitch .toggleButton {
-  left: calc(100% - 64px);
-  background: #fff;
-}
 header .inner .btnCall {
   width: 30px;
   height: 30px;
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 20px;
+  transform: translateY(-20%);
   display: none;
 }
 header .inner .btnCall i {
@@ -174,6 +139,11 @@ header.on .inner {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+  header .inner h1 a i {
+    font-size: 40px;
+    margin-top: 50%;
   }
   header .inner .menuWeb {
     display: none;
@@ -183,6 +153,9 @@ header.on .inner {
   }
   header .inner .menuMo {
     display: block;
+  }
+  header.on {
+    height: 60px;
   }
 }
 .main {
@@ -2025,7 +1998,7 @@ footer .inner p {
 }
 .support {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   padding: 100px 0;
   display: flex;
   flex-direction: column;
@@ -2035,7 +2008,7 @@ footer .inner p {
 }
 .support .inner {
   width: 1180px;
-  height: 900px;
+  height: 100%;
   margin: 0 auto;
 }
 .support .inner .menu {
@@ -2059,7 +2032,7 @@ footer .inner p {
 }
 .support .inner article {
   width: 1180px;
-  height: 100%;
+  height: 600px;
   display: none;
   opacity: 0;
   position: absolute;
@@ -2207,6 +2180,151 @@ footer .inner p {
 .support.on {
   opacity: 1;
   margin-top: 0;
+}
+
+@media screen and (max-width: 539px) {
+  .support {
+    height: 130vh;
+  }
+  .support .inner {
+    width: 100%;
+  }
+  .support .inner .menu {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    margin-bottom: 80px;
+    align-items: center;
+  }
+  .support .inner .menu li {
+    width: 100%;
+    padding: 15px;
+    border: 1px;
+    text-align: center;
+    color: #444;
+    font: bold 15px/1 "arial";
+    cursor: pointer;
+  }
+  .support .inner .menu li.on {
+    background-color: #4d6ee4;
+    color: #fff;
+  }
+  .support .inner article {
+    width: 100%;
+  }
+  .support .inner article > .title {
+    justify-content: center;
+  }
+  .support .inner article > .title h3 {
+    font-size: 30px;
+  }
+  .support .inner .FAQ table thead tr th:nth-of-type(1), .support .inner .QNA table thead tr th:nth-of-type(1) {
+    width: 20%;
+    display: none;
+  }
+  .support .inner .FAQ table thead tr th:nth-of-type(2), .support .inner .QNA table thead tr th:nth-of-type(2) {
+    width: 220px;
+  }
+  .support .inner .FAQ table thead tr th:nth-of-type(3), .support .inner .QNA table thead tr th:nth-of-type(3) {
+    width: 745px;
+    padding-right: 10px;
+  }
+  .support .inner .FAQ table thead tr th:nth-of-type(4), .support .inner .QNA table thead tr th:nth-of-type(4) {
+    width: 130px;
+  }
+  .support .inner .FAQ table tbody tr td:nth-of-type(1), .support .inner .QNA table tbody tr td:nth-of-type(1) {
+    width: 75px;
+    display: none;
+  }
+  .support .inner .FAQ table tbody tr td:nth-of-type(2), .support .inner .QNA table tbody tr td:nth-of-type(2) {
+    width: 220px;
+  }
+  .support .inner .FAQ table tbody tr td:nth-of-type(3), .support .inner .QNA table tbody tr td:nth-of-type(3) {
+    width: 755px;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 10px;
+  }
+  .support .inner .FAQ table tbody tr td:nth-of-type(3):hover, .support .inner .QNA table tbody tr td:nth-of-type(3):hover {
+    text-decoration: underline;
+  }
+  .support .inner .FAQ table tbody tr td:nth-of-type(4), .support .inner .QNA table tbody tr td:nth-of-type(4) {
+    width: 130px;
+  }
+  .support .inner .QNA .title .icon {
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: 40px;
+  }
+  .support .inner .QNA .title .icon i {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .support .inner .Announcement table thead tr th:nth-of-type(1) {
+    width: 75px;
+    display: none;
+  }
+  .support .inner .Announcement table thead tr th:nth-of-type(2) {
+    width: 965px;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .support .inner .Announcement table thead tr th:nth-of-type(3) {
+    width: 130px;
+  }
+  .support .inner .Announcement table tbody tr td span {
+    background-color: #4d6ee4;
+    font-size: 14px;
+    color: #fff;
+    padding: 2px 8px;
+  }
+  .support .inner .Announcement table tbody tr td:nth-of-type(1) {
+    width: 75px;
+    display: none;
+  }
+  .support .inner .Announcement table tbody tr td:nth-of-type(2) {
+    width: 965px;
+    text-align: left;
+    font-weight: bold;
+    cursor: pointer;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+  .support .inner .Announcement table tbody tr td:nth-of-type(2):hover {
+    text-decoration: underline;
+  }
+  .support .inner .Announcement table tbody tr td:nth-of-type(3) {
+    width: 130px;
+  }
+  .support .inner .numberClick {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+  }
+  .support .inner .numberClick li {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    color: #aaa;
+    border: 1px solid #444;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .support .inner .numberClick li.on {
+    background-color: #444;
+    color: #fff;
+  }
+  .support.on {
+    opacity: 1;
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
