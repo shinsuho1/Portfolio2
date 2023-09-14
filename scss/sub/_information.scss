@@ -1,12 +1,10 @@
 .information{
     width: 100%;
-    // height: 100vh;
     position: relative;
     nav{
         display: none;
         width: 150px;
         height: 120px;
-        // border: 1px solid #000;
         position: fixed;
         left: 23vw;
         top: 22vh;
@@ -19,13 +17,11 @@
                 height: 40px;
                 font: 16px/40px "Montserrat";
                 color: #999;
-                // transition: 1s;
                 &.on{
                     font-weight: bold;
                     color: #000;
                     font-size: 20px;
                 }
-                //li를 클릭했을때 풀스크린으로 탭띄우게 하기
             }
         }
     }
@@ -81,7 +77,6 @@
                 transition: 1s 0.2s;
             }
             &:nth-of-type(3){
-                // flex-direction: row;
                 justify-content: center;
                 .pic{
                     img{
@@ -127,7 +122,6 @@
             &.first{
                 margin-left: 0;
                 opacity: 1;
-                // transform: scale(1.05);
             }
         }
     }
@@ -137,7 +131,6 @@
         margin: 0 auto;
         position: fixed;
         top: 50%;
-        // left: 50%;
         transform: translate(-50%, -50%);
         left: -100%;
         opacity: 1;
@@ -145,7 +138,6 @@
         display: flex;
         transition: 1s;
         background-color: #333;
-        // float: left;
 
         figure{
             display: flex;
@@ -157,7 +149,6 @@
                 width: 100%;
                 height: 70%;
                 object-fit: cover;
-                // background-color: #fff;
             }
         }
 
@@ -198,7 +189,6 @@
         margin: 0 auto;
         position: fixed;
         top: 50%;
-        // left: 50%;
         transform: translate(-50%, -50%);
         left: -100%;
         opacity: 1;
@@ -206,7 +196,6 @@
         transition: 1s;
         background-color: #333;
         border-radius: 15px;
-        // float: left;
         figure{
             width: 60%;
             height: 100%;
@@ -272,6 +261,14 @@
             p{
                 color: #ddd;
             }
+            >span{
+                font-size: 24px;
+                position: absolute;
+                cursor: pointer;
+                color: orange;
+                bottom: 5vw;
+                right: 50px;
+            }
         }
         &.on{
             left: 50%;
@@ -285,10 +282,6 @@
                 margin-top: 60px;
                 opacity: 1;
             }
-            // article{
-            //     margin-left: 0;
-            //     opacity: 1;
-            // }
         }
     }
 }
@@ -306,13 +299,11 @@
         width: 100%;
         >.inner{
             width: 100%;
-            // margin-left: 20px;
             display: flex;
             flex-direction: column;
             justify-self: center;
             align-items: center;
             h1{
-                // margin-left: 20px;
                 font-size: 30px;
             }
         
@@ -353,7 +344,6 @@
 
                     .text{
                         height: 70px;
-                        // margin: 0 0;
                         justify-content: start;
                         align-items: start;
                         margin-left: 20px;

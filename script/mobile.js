@@ -5,4 +5,3 @@ for(let el of mobile_article){
         el.classList.add("click");
     });
 }
-

@@ -1,5 +1,4 @@
-// key = AIzaSyDgv-ToqwoVeH_iMBouKnpnuMXWjqXbK8I
-// list = PLboMi2lmGKuA7r6tYKYAh-yUxn1OBNty3
+// key = AIzaSyDgv-ToqwoVeH_iMBouKnpnuMXWjqXbK8I / list = PLboMi2lmGKuA7r6tYKYAh-yUxn1OBNty3
 
 let vidList = document.querySelector(".vidList");
 let key = "AIzaSyDgv-ToqwoVeH_iMBouKnpnuMXWjqXbK8I";

@@ -839,11 +839,15 @@ section.data_page.on .inner .right_side .pic .right {
     margin-bottom: 5vw;
   }
   section.data_page .inner .left_side .main_text h1 {
-    margin: 10vw 0 10px 50px;
+    margin: 10vw 0 10px 30px;
     font: bold 6vw/1.3 "airal";
   }
   section.data_page .inner .left_side .main_text p {
-    margin: 10px 10px 10px 50px;
+    margin: 10px 10px 10px 30px;
+  }
+  section.data_page .inner .left_side .sub_text .table p {
+    margin-left: 30px;
+    margin-right: 30px;
   }
   section.data_page .inner .left_side .sub_text .table .data {
     width: 82%;
@@ -856,6 +860,7 @@ section.data_page.on .inner .right_side .pic .right {
   section.data_page .inner .right_side .pic .left, section.data_page .inner .right_side .pic .right {
     width: 100%;
     box-shadow: none;
+    margin: 0 auto;
   }
   section.data_page .inner .right_side .pic .left article, section.data_page .inner .right_side .pic .right article {
     width: 80%;
@@ -1428,6 +1433,14 @@ footer .inner p {
 .information .location .txt1 p {
   color: #ddd;
 }
+.information .location .txt1 > span {
+  font-size: 24px;
+  position: absolute;
+  cursor: pointer;
+  color: orange;
+  bottom: 5vw;
+  right: 50px;
+}
 .information .location.on {
   left: 50%;
 }
@@ -1657,7 +1670,7 @@ footer .inner p {
   .news .inner {
     width: 100%;
     height: 100%;
-    margin-top: 40px;
+    margin-top: 50px;
   }
   .news .inner::before {
     content: "";
@@ -1711,7 +1724,7 @@ footer .inner p {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(../img/sub/download_main.png);
+  background-image: url(../img/sub/download/download_main.png);
   background-repeat: no-repeat;
   background-position: center;
   bottom: -50%;
